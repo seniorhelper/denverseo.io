@@ -159,8 +159,6 @@ section{padding:90px 0}
 .signal-track{height:8px;background:rgba(255,255,255,.06);border-radius:4px;overflow:hidden}
 .signal-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--blue),var(--cyan));animation:growBar 1.8s ease forwards}
 @keyframes growBar{from{width:0 !important}}
-.ai-network-wrap{position:relative;margin:60px 0 40px;border-radius:16px;overflow:hidden;border:1px solid var(--border);background:#050d1a}
-#aiNetworkCanvas{display:block;width:100%;height:360px}
 .faq-list{max-width:860px}
 .faq-item{border-bottom:1px solid var(--border)}
 .faq-q{width:100%;background:none;border:none;color:var(--white);font-family:var(--font-body);font-size:15px;font-weight:500;text-align:left;padding:20px 0;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:20px;transition:color .2s}
@@ -218,7 +216,7 @@ footer{background:#ffffff;border-top:1px solid #e0e6f0;padding:60px 0 30px}
 .reveal.visible{opacity:1;transform:none}
 @media(max-width:1024px){.hero-inner{grid-template-columns:1fr}.hero-form-card{max-width:100%}.services-grid{grid-template-columns:repeat(2,1fr)}.engines-grid{grid-template-columns:repeat(2,1fr)}.two-col{grid-template-columns:1fr}.charts-row{grid-template-columns:1fr}.bottom-form-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}.stats-inner{grid-template-columns:repeat(3,1fr)}.icon-list{grid-template-columns:1fr}}
 @media(max-width:768px){.header-nav{display:none}.hamburger{display:flex}.header-phone{display:none}.btn-audit-header{font-size:12px;padding:8px 14px}.services-grid{grid-template-columns:1fr}.engines-grid{grid-template-columns:1fr}.stats-inner{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column;gap:12px;text-align:center}.hero-inner{padding:30px 16px 50px;grid-template-columns:1fr}.hero-h1{font-size:clamp(32px,9vw,52px)}.hero-sub{font-size:15px}.page-hero{min-height:auto}.hero-form-card{padding:24px 20px}.section-title{font-size:clamp(26px,7vw,40px)}.two-col{gap:36px}.bottom-form-grid{gap:36px}.icon-list{grid-template-columns:1fr}.trust-row{flex-direction:column}.bar-label{width:90px;font-size:11px}.eyetoad-banner{flex-direction:column;gap:14px}}
-@media(max-width:480px){.header-inner{padding:0 16px}.header-logo img{width:160px}.container{padding:0 16px}.hero-badges{display:none}.hero-ctas{flex-direction:column;width:100%}.btn-hero-primary,.btn-hero-secondary{width:100%;text-align:center;justify-content:center}.stats-inner{grid-template-columns:1fr 1fr}.comp-table{font-size:13px}.comp-table th,.comp-table td{padding:10px 12px}#aiNetworkCanvas{height:260px}}
+@media(max-width:480px){.header-inner{padding:0 16px}.header-logo img{width:160px}.container{padding:0 16px}.hero-badges{display:none}.hero-ctas{flex-direction:column;width:100%}.btn-hero-primary,.btn-hero-secondary{width:100%;text-align:center;justify-content:center}.stats-inner{grid-template-columns:1fr 1fr}.comp-table{font-size:13px}.comp-table th,.comp-table td{padding:10px 12px}}
 </style>
 </head>
 <body>
@@ -337,18 +335,6 @@ footer{background:#ffffff;border-top:1px solid #e0e6f0;padding:60px 0 30px}
       <div class="svc-card" style="--card-accent:linear-gradient(90deg,#4285f4,#a259ff)"><span class="svc-icon">&#128202;</span><h3>SEO Audit and Strategy</h3><p>Free comprehensive audit covering Google rankings, AI search visibility, technical health, conversion rate, and competitive gaps &mdash; with a clear prioritized action plan.</p><a class="svc-link" href="/denver-seo-audit/">Get Free Audit &#8594;</a></div>
       <div class="svc-card" style="--card-accent:linear-gradient(90deg,#00e5c3,#4285f4)"><span class="svc-icon">&#128736;</span><h3>Custom SEO Software and Tools</h3><p>Need a custom lead gen tool, WordPress plugin, or proprietary SEO software? We build it. Technology is a competitive advantage &mdash; use it.</p><a class="svc-link" href="/contact/">Talk to Us &#8594;</a></div>
     </div>
-  </div>
-</section>
-
-<section style="background:var(--navy2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);" aria-label="AI search engine network visualization">
-  <div class="container">
-    <span class="section-tag">Live Visualization</span>
-    <h2 class="section-title">Your Business <span class="accent">Inside Every AI Engine</span></h2>
-    <p class="section-sub" style="margin-bottom:20px">This is how a properly optimized Denver business gets cited across the entire AI search ecosystem simultaneously &mdash; not just Google.</p>
-    <div class="ai-network-wrap">
-      <canvas id="aiNetworkCanvas" aria-label="Interactive AI search engine network showing Denver business connections"></canvas>
-    </div>
-    <p style="text-align:center;font-size:12px;color:var(--gray);font-family:var(--font-mono);margin-top:12px">* Interactive visualization &mdash; nodes represent AI engines actively citing your Denver business</p>
   </div>
 </section>
 
@@ -765,85 +751,6 @@ footer{background:#ffffff;border-top:1px solid #e0e6f0;padding:60px 0 30px}
   var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');e.target.classList.remove('hidden');io.unobserve(e.target);}});},{threshold:0.1});
   els.forEach(function(el){el.classList.add('hidden');io.observe(el);});
 })();
-
-// AI NETWORK CANVAS — FIXED: completed draw() + animation loop + mobile-safe resize
-(function(){
-  var canvas=document.getElementById('aiNetworkCanvas');
-  if(!canvas)return;
-  var ctx=canvas.getContext('2d');
-  var engines=[
-    {name:'ChatGPT',color:'#10a37f'},
-    {name:'Perplexity',color:'#5c9ded'},
-    {name:'Claude',color:'#cc785c'},
-    {name:'Gemini',color:'#4285f4'},
-    {name:'Grok',color:'#ff5a1f'},
-    {name:'Manus AI',color:'#00e5c3'},
-    {name:'Google AI',color:'#00c2ff'}
-  ];
-  var nodes=[],particles=[],cx=0,cy=0,lastSpawn=0;
-
-  function resize(){
-    canvas.width=canvas.offsetWidth||800;
-    canvas.height=canvas.offsetHeight||360;
-    cx=canvas.width/2;
-    cy=canvas.height/2;
-    var r=Math.min(canvas.width,canvas.height)*0.34;
-    nodes=engines.map(function(e,i){
-      var a=(i/engines.length)*Math.PI*2-Math.PI/2;
-      return{x:cx+Math.cos(a)*r,y:cy+Math.sin(a)*r,name:e.name,color:e.color,radius:28,pulse:Math.random()*Math.PI*2};
-    });
-  }
-
-  // Defer first resize so mobile layout is computed before we measure offsetWidth
-  setTimeout(resize,50);
-  window.addEventListener('resize',resize);
-
-  function spawn(){
-    if(!nodes.length)return;
-    var n=nodes[Math.floor(Math.random()*nodes.length)];
-    var fc=Math.random()>0.5;
-    particles.push({sx:fc?cx:n.x,sy:fc?cy:n.y,tx:fc?n.x:cx,ty:fc?n.y:cy,progress:0,speed:0.007+Math.random()*0.007,color:n.color});
-  }
-
-  function draw(ts){
-    // If nodes not yet built (resize still pending), wait
-    if(!nodes.length){requestAnimationFrame(draw);return;}
-
-    ctx.clearRect(0,0,canvas.width,canvas.height);
-
-    // Connection lines from center to each engine
-    nodes.forEach(function(n){
-      var g=ctx.createLinearGradient(cx,cy,n.x,n.y);
-      g.addColorStop(0,'rgba(0,194,255,0.3)');
-      g.addColorStop(1,n.color+'33');
-      ctx.beginPath();ctx.moveTo(cx,cy);ctx.lineTo(n.x,n.y);
-      ctx.strokeStyle=g;ctx.lineWidth=1.5;ctx.stroke();
-    });
-
-    // Spawn travelling particles
-    if(ts-lastSpawn>450){spawn();lastSpawn=ts;}
-
-    // Draw + advance particles
-    particles=particles.filter(function(p){return p.progress<=1;});
-    particles.forEach(function(p){
-      p.progress+=p.speed;
-      var px=p.sx+(p.tx-p.sx)*p.progress;
-      var py=p.sy+(p.ty-p.sy)*p.progress;
-      ctx.save();
-      ctx.shadowBlur=10;ctx.shadowColor=p.color;
-      ctx.beginPath();ctx.arc(px,py,3.5,0,Math.PI*2);
-      ctx.fillStyle=p.color;ctx.fill();
-      ctx.restore();
-    });
-
-    // Engine nodes
-    nodes.forEach(function(n){
-      n.pulse+=0.045;
-      var ps=Math.sin(n.pulse)*3;
-      // Outer pulse ring
-      ctx.beginPath();ctx.arc(n.x,n.y,n.radius+ps+8,0,Math.PI*2);
-      ctx.strokeStyle=n.color+'22';ctx.lineWidth=2;ctx.stroke();
-      // Node fill
-      var g=ctx.createRadialGradient(n.x-7,n.y-7,2,n.x,n.y,n.radius);
-      g.addColorStop(0,n.color+'cc');g.addColorStop(1,n.color+'44');
-   
+</script>
+</body>
+</html>
