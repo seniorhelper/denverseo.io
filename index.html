@@ -910,6 +910,97 @@ footer {
 /* SPEAKABLE */
 .speakable-intro { display: none; }
 
+/* HAMBURGER MENU */
+.hamburger-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+  gap: 5px;
+  padding: 0;
+  transition: border-color 0.2s;
+  flex-shrink: 0;
+}
+.hamburger-btn:hover { border-color: var(--blue); }
+.hamburger-btn span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: #1a2a4a;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.hamburger-btn.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger-btn.open span:nth-child(2) { opacity: 0; }
+.hamburger-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* MOBILE NAV DRAWER */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 72px;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  border-bottom: 1px solid #e8edf5;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  z-index: 999;
+  padding: 16px 24px 20px;
+  flex-direction: column;
+  gap: 4px;
+}
+.mobile-nav.open { display: flex; }
+.mobile-nav a {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  color: #1a2a4a;
+  text-decoration: none;
+  padding: 11px 14px;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+.mobile-nav a:hover { background: #f0f4ff; color: var(--blue); }
+.mobile-nav-cta {
+  margin-top: 8px;
+  padding-top: 12px;
+  border-top: 1px solid #e8edf5;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.mobile-nav-cta a.m-phone {
+  font-family: var(--font-head);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy2);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #fff8f5;
+  border: 1.5px solid rgba(255,90,31,0.2);
+}
+.mobile-nav-cta a.m-audit {
+  background: var(--orange);
+  color: white;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+}
+
 /* RESPONSIVE */
 @media (max-width: 1024px) {
   .hero-form-row { grid-template-columns: 1fr; }
@@ -925,6 +1016,9 @@ footer {
 }
 @media (max-width: 768px) {
   .header-nav { display: none; }
+  .header-cta .header-phone { display: none; }
+  .header-cta .btn-audit-header { display: none; }
+  .hamburger-btn { display: flex; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .why-grid { grid-template-columns: 1fr; }
   .engines-grid { grid-template-columns: 1fr; }
@@ -962,12 +1056,32 @@ footer {
     </nav>
     <div class="header-cta">
       <a class="header-phone phone-pulse" href="tel:18004818638" aria-label="Call DenverSEO.io">
-        📞 <strong>1-800-481-8638</strong>
+        &#128222; <strong>1-800-481-8638</strong>
       </a>
       <a class="btn-audit-header" href="/denver-seo-audit/">Free Audit</a>
     </div>
+    <button class="hamburger-btn" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
 </header>
+
+<!-- MOBILE NAV DRAWER -->
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+  <a href="/denver-seo-services/">Services</a>
+  <a href="/denver-ai-seo/">AI SEO</a>
+  <a href="/local-seo-denver/">Local SEO</a>
+  <a href="/denver-seo-pricing/">Pricing</a>
+  <a href="/why-most-denver-seo-fails/">Why SEO Fails</a>
+  <a href="/blog/">Blog</a>
+  <a href="/about/">About</a>
+  <div class="mobile-nav-cta">
+    <a class="m-phone" href="tel:18004818638">&#128222; 1-800-481-8638</a>
+    <a class="m-audit" href="/denver-seo-audit/">Get a Free SEO Audit</a>
+  </div>
+</nav>
 
 <!-- HERO — video fills full viewport, content at bottom -->
 <section class="hero" aria-label="Hero section">
@@ -1036,8 +1150,8 @@ footer {
               <option>Full SEO + AI strategy</option>
             </select>
           </div>
-          <button type="submit" class="btn-submit">Get My Free Strategy →</button>
-          <p class="form-trust">🔒 No spam. No sales pressure. Just real answers.</p>
+          <button type="submit" class="btn-submit">Get My Free Strategy &#8594;</button>
+          <p class="form-trust">&#128274; No spam. No sales pressure. Just real answers.</p>
         </form>
       </div>
     </div>
@@ -1057,7 +1171,7 @@ footer {
         <div class="stat-label">Of Buyers Research Online Before Purchasing</div>
       </div>
       <div class="stat-item">
-        <div class="stat-num">3×</div>
+        <div class="stat-num">3&#xD7;</div>
         <div class="stat-label">More Leads from Optimized AI Citations</div>
       </div>
       <div class="stat-item">
@@ -1092,10 +1206,9 @@ footer {
       <span class="badge">Conversion Optimization</span>
     </div>
 
-    <!-- INLINE SVG INFOGRAPHIC — replaces broken image -->
+    <!-- INLINE SVG INFOGRAPHIC -->
     <div class="infographic-svg-wrap" aria-label="Denver SEO — How AI Search and Google Rankings Work Together in 2026">
       <svg viewBox="0 0 960 320" xmlns="http://www.w3.org/2000/svg" style="background:#0a1628; border-radius:12px; border:1px solid rgba(255,255,255,0.08);">
-        <!-- Background grid -->
         <defs>
           <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" style="stop-color:#0057ff;stop-opacity:1"/>
@@ -1106,18 +1219,12 @@ footer {
             <stop offset="100%" style="stop-color:#ffb347;stop-opacity:1"/>
           </linearGradient>
         </defs>
-
-        <!-- Title -->
         <text x="480" y="36" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="18" font-weight="800" fill="#ffffff" letter-spacing="1">HOW DENVERSEO.io DOMINATES ALL SEARCH — GOOGLE + AI</text>
         <line x1="80" y1="48" x2="880" y2="48" stroke="rgba(0,194,255,0.2)" stroke-width="1"/>
-
-        <!-- CENTER: Your Business -->
         <circle cx="480" cy="175" r="52" fill="url(#cyanGrad)" opacity="0.9"/>
         <text x="480" y="169" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="13" font-weight="800" fill="#fff">YOUR</text>
         <text x="480" y="184" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="13" font-weight="800" fill="#fff">BUSINESS</text>
         <text x="480" y="199" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)">in Denver</text>
-
-        <!-- Connector lines -->
         <line x1="140" y1="100" x2="432" y2="151" stroke="rgba(0,194,255,0.3)" stroke-width="1.5" stroke-dasharray="4,3"/>
         <line x1="290" y1="80" x2="445" y2="140" stroke="rgba(0,194,255,0.3)" stroke-width="1.5" stroke-dasharray="4,3"/>
         <line x1="480" y1="80" x2="480" y2="123" stroke="rgba(0,194,255,0.3)" stroke-width="1.5" stroke-dasharray="4,3"/>
@@ -1125,44 +1232,27 @@ footer {
         <line x1="820" y1="100" x2="528" y2="151" stroke="rgba(0,194,255,0.3)" stroke-width="1.5" stroke-dasharray="4,3"/>
         <line x1="140" y1="260" x2="432" y2="200" stroke="rgba(0,194,255,0.3)" stroke-width="1.5" stroke-dasharray="4,3"/>
         <line x1="820" y1="260" x2="528" y2="200" stroke="rgba(0,194,255,0.3)" stroke-width="1.5" stroke-dasharray="4,3"/>
-
-        <!-- Engine nodes -->
-        <!-- Google -->
         <rect x="52" y="66" width="90" height="52" rx="8" fill="rgba(66,133,244,0.15)" stroke="rgba(66,133,244,0.5)" stroke-width="1.5"/>
         <text x="97" y="87" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-size="13" font-weight="700" fill="#4285f4">Google</text>
         <text x="97" y="103" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="rgba(255,255,255,0.5)">Organic + Maps</text>
-
-        <!-- ChatGPT -->
         <rect x="240" y="56" width="90" height="52" rx="8" fill="rgba(16,163,127,0.15)" stroke="rgba(16,163,127,0.5)" stroke-width="1.5"/>
         <text x="285" y="77" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-size="13" font-weight="700" fill="#10a37f">ChatGPT</text>
         <text x="285" y="93" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="rgba(255,255,255,0.5)">Citations + Search</text>
-
-        <!-- AI Overviews -->
         <rect x="432" y="56" width="100" height="52" rx="8" fill="rgba(0,194,255,0.12)" stroke="rgba(0,194,255,0.5)" stroke-width="1.5"/>
         <text x="482" y="77" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-size="12" font-weight="700" fill="#00c2ff">AI Overviews</text>
         <text x="482" y="93" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="rgba(255,255,255,0.5)">AIO + SGE</text>
-
-        <!-- Perplexity -->
         <rect x="630" y="56" width="90" height="52" rx="8" fill="rgba(92,157,237,0.15)" stroke="rgba(92,157,237,0.5)" stroke-width="1.5"/>
         <text x="675" y="77" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-size="13" font-weight="700" fill="#5c9ded">Perplexity</text>
         <text x="675" y="93" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="rgba(255,255,255,0.5)">Source Authority</text>
-
-        <!-- Gemini -->
         <rect x="776" y="66" width="90" height="52" rx="8" fill="rgba(66,133,244,0.12)" stroke="rgba(66,133,244,0.4)" stroke-width="1.5"/>
         <text x="821" y="87" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-size="13" font-weight="700" fill="#4285f4">Gemini</text>
         <text x="821" y="103" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="rgba(255,255,255,0.5)">Google AI</text>
-
-        <!-- Grok -->
         <rect x="52" y="238" width="90" height="52" rx="8" fill="rgba(255,90,31,0.12)" stroke="rgba(255,90,31,0.4)" stroke-width="1.5"/>
         <text x="97" y="259" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-size="13" font-weight="700" fill="#ff5a1f">Grok AI</text>
         <text x="97" y="275" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="rgba(255,255,255,0.5)">Real-Time Web</text>
-
-        <!-- Manus -->
         <rect x="776" y="238" width="90" height="52" rx="8" fill="rgba(0,229,195,0.12)" stroke="rgba(0,229,195,0.4)" stroke-width="1.5"/>
         <text x="821" y="259" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-size="13" font-weight="700" fill="#00e5c3">Manus AI</text>
         <text x="821" y="275" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="rgba(255,255,255,0.5)">Agentic Search</text>
-
-        <!-- Bottom label -->
         <text x="480" y="305" text-anchor="middle" font-family="Outfit,sans-serif" font-size="12" fill="rgba(255,255,255,0.4)">DenverSEO.io optimizes your business for every search channel simultaneously — Google + AI</text>
       </svg>
     </div>
@@ -1173,9 +1263,7 @@ footer {
   </div>
 </section>
 
-<!-- ============================================================ -->
 <!-- LONG-FORM CONTENT SECTION 1 — What is Denver SEO -->
-<!-- ============================================================ -->
 <section style="background: rgba(255,255,255,0.015);" aria-labelledby="denver-seo-explained">
   <div class="container">
     <span class="section-tag">Denver SEO Explained</span>
@@ -1250,53 +1338,51 @@ footer {
 <section aria-labelledby="services-heading">
   <div class="container">
     <span class="section-tag">What We Do</span>
-    <h2 id="services-heading" class="section-title">Full-Stack <span class="accent">SEO & AI Authority</span><br>for Denver Businesses</h2>
+    <h2 id="services-heading" class="section-title">Full-Stack <span class="accent">SEO &amp; AI Authority</span><br>for Denver Businesses</h2>
     <p class="section-sub">We build every layer your business needs to dominate — from Google's map pack to ChatGPT citations to conversion-optimized pages that turn visitors into customers.</p>
 
     <div class="cards-grid">
       <div class="card">
-        <div class="card-icon">🎯</div>
+        <div class="card-icon">&#127919;</div>
         <h3>Denver SEO Services</h3>
         <p>Keyword research, on-page SEO, technical audits, and authority link building — all targeted to the Denver market and your specific industry.</p>
-        <a href="/denver-seo-services/">Explore Denver SEO →</a>
+        <a href="/denver-seo-services/">Explore Denver SEO &#8594;</a>
       </div>
       <div class="card">
-        <div class="card-icon">🤖</div>
+        <div class="card-icon">&#129302;</div>
         <h3>AI Search Optimization</h3>
         <p>We optimize your content to be cited by ChatGPT, Perplexity, Claude, Gemini, and Grok. AI search is where buyers go first. Be there.</p>
-        <a href="/denver-ai-seo/">Explore AI SEO →</a>
+        <a href="/denver-ai-seo/">Explore AI SEO &#8594;</a>
       </div>
       <div class="card">
-        <div class="card-icon">🗺️</div>
+        <div class="card-icon">&#128506;&#65039;</div>
         <h3>Local SEO Denver</h3>
         <p>Google Maps pack domination, Google Business Profile optimization, citation building, and review strategy for Denver and surrounding areas.</p>
-        <a href="/local-seo-denver/">Explore Local SEO →</a>
+        <a href="/local-seo-denver/">Explore Local SEO &#8594;</a>
       </div>
       <div class="card">
-        <div class="card-icon">🧠</div>
+        <div class="card-icon">&#129504;</div>
         <h3>GEO — Generative Engine Optimization</h3>
         <p>Build entity authority so AI systems recognize your business as the definitive answer in your industry. GEO is the new frontier of search.</p>
-        <a href="/generative-engine-optimization/">Explore GEO →</a>
+        <a href="/generative-engine-optimization/">Explore GEO &#8594;</a>
       </div>
       <div class="card">
-        <div class="card-icon">📈</div>
+        <div class="card-icon">&#128200;</div>
         <h3>Conversion Optimization</h3>
         <p>Rankings mean nothing if your site doesn't convert. We build trust, speed, clear CTAs, and persuasive copy into every page we touch.</p>
-        <a href="/denver-seo-services/">Explore Conversion CRO →</a>
+        <a href="/denver-seo-services/">Explore Conversion CRO &#8594;</a>
       </div>
       <div class="card">
-        <div class="card-icon">⚙️</div>
-        <h3>SEO Software & Marketing Tools</h3>
+        <div class="card-icon">&#9881;&#65039;</div>
+        <h3>SEO Software &amp; Marketing Tools</h3>
         <p>Need custom SEO software, WordPress plugins, or lead gen tools? DenverSEO.io builds proprietary marketing technology for businesses that want an unfair advantage.</p>
-        <a href="/contact/">Talk to Our Team →</a>
+        <a href="/contact/">Talk to Our Team &#8594;</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================ -->
 <!-- LONG-FORM CONTENT SECTION 2 — AI Search Deep Dive -->
-<!-- ============================================================ -->
 <section aria-labelledby="ai-search-deep-dive" style="background:rgba(255,255,255,0.015);">
   <div class="container">
     <span class="section-tag">The AI Search Revolution</span>
@@ -1367,7 +1453,7 @@ footer {
         </div>
 
         <div style="display:flex; gap:16px; flex-wrap:wrap; margin-top:28px;">
-          <a href="/denver-ai-seo/" class="btn-cta">Explore AI SEO →</a>
+          <a href="/denver-ai-seo/" class="btn-cta">Explore AI SEO &#8594;</a>
           <a href="/denver-seo-audit/" class="btn-cta-outline">Free Audit</a>
         </div>
       </div>
@@ -1387,45 +1473,43 @@ footer {
         <div class="engine-name">ChatGPT Search</div>
         <span class="engine-tag">OpenAI · Highest consumer volume</span>
         <p class="engine-desc">We structure your content so ChatGPT's browsing mode cites your business when users ask for Denver recommendations in your industry.</p>
-        <a href="/chatgpt-search-optimization/" class="engine-link">ChatGPT SEO →</a>
+        <a href="/chatgpt-search-optimization/" class="engine-link">ChatGPT SEO &#8594;</a>
       </div>
       <div class="engine-card" style="--accent-color: #5c9ded;">
         <div class="engine-name">Perplexity AI</div>
         <span class="engine-tag">Fastest-growing research tool</span>
         <p class="engine-desc">Perplexity shows source citations prominently. We build the authority signals that get your site selected as a trusted source.</p>
-        <a href="/perplexity-seo/" class="engine-link">Perplexity SEO →</a>
+        <a href="/perplexity-seo/" class="engine-link">Perplexity SEO &#8594;</a>
       </div>
       <div class="engine-card" style="--accent-color: #cc785c;">
         <div class="engine-name">Claude AI</div>
         <span class="engine-tag">Anthropic · Citation-based answers</span>
         <p class="engine-desc">Claude prioritizes structured, authoritative content. We optimize your schema, entity signals, and content clarity for Claude citations.</p>
-        <a href="/claude-seo/" class="engine-link">Claude SEO →</a>
+        <a href="/claude-seo/" class="engine-link">Claude SEO &#8594;</a>
       </div>
       <div class="engine-card" style="--accent-color: #4285f4;">
         <div class="engine-name">Google Gemini</div>
         <span class="engine-tag">Google ecosystem · SGE successor</span>
         <p class="engine-desc">Gemini is deeply integrated with Google's index. We align your Google SEO with Gemini's AI answer patterns for maximum coverage.</p>
-        <a href="/gemini-seo/" class="engine-link">Gemini SEO →</a>
+        <a href="/gemini-seo/" class="engine-link">Gemini SEO &#8594;</a>
       </div>
       <div class="engine-card" style="--accent-color: #ff5a1f;">
         <div class="engine-name">Grok AI</div>
         <span class="engine-tag">xAI · Real-time web signals</span>
         <p class="engine-desc">Grok pulls from X (Twitter) signals and real-time web data. We build the brand presence and content velocity that Grok's systems reward.</p>
-        <a href="/grok-seo/" class="engine-link">Grok SEO →</a>
+        <a href="/grok-seo/" class="engine-link">Grok SEO &#8594;</a>
       </div>
       <div class="engine-card" style="--accent-color: #00e5c3;">
         <div class="engine-name">Manus AI</div>
         <span class="engine-tag">Agentic · Multi-step research</span>
         <p class="engine-desc">Manus AI acts as an autonomous agent. We structure your site for agentic discovery — so your business gets recommended even in fully automated research tasks.</p>
-        <a href="/manus-seo/" class="engine-link">Manus SEO →</a>
+        <a href="/manus-seo/" class="engine-link">Manus SEO &#8594;</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================ -->
 <!-- LONG-FORM CONTENT SECTION 3 — GEO + Local + Strategy -->
-<!-- ============================================================ -->
 <section aria-labelledby="geo-local-strategy">
   <div class="container">
     <span class="section-tag">GEO + Local SEO + Strategy</span>
@@ -1469,7 +1553,7 @@ footer {
           </div>
 
           <div style="margin-top:24px; display:flex; gap:16px; flex-wrap:wrap;">
-            <a href="/denver-seo-services/" class="btn-cta">View All Services →</a>
+            <a href="/denver-seo-services/" class="btn-cta">View All Services &#8594;</a>
             <a href="/denver-seo-audit/" class="btn-cta-outline">Get a Free Audit</a>
           </div>
         </div>
@@ -1498,12 +1582,12 @@ footer {
       </div>
       <div class="process-step">
         <div class="step-num">3</div>
-        <div class="step-title">Execute & Optimize</div>
+        <div class="step-title">Execute &amp; Optimize</div>
         <p class="step-desc">We build authority, optimize content, build AI citations, and improve conversion — while you focus on running your business. You see progress every 30 days.</p>
       </div>
       <div class="process-step">
         <div class="step-num">4</div>
-        <div class="step-title">Grow & Scale</div>
+        <div class="step-title">Grow &amp; Scale</div>
         <p class="step-desc">Rankings rise. Leads increase. AI systems start citing your business. We scale what's working and always keep you ahead of the next algorithm change.</p>
       </div>
     </div>
@@ -1519,42 +1603,42 @@ footer {
 
     <div class="why-grid">
       <div class="why-item">
-        <div class="why-icon">🧑‍💼</div>
+        <div class="why-icon">&#129489;&#8205;&#128188;</div>
         <div>
           <h3>Dedicated Marketing Expert</h3>
           <p>Every client gets one person who knows your business deeply. They set realistic expectations, report every 30 days, and treat your budget like their own money.</p>
         </div>
       </div>
       <div class="why-item">
-        <div class="why-icon">📊</div>
+        <div class="why-icon">&#128202;</div>
         <div>
           <h3>Real Metrics Only</h3>
           <p>We don't report vanity metrics. We report leads, calls, and revenue. If your SEO isn't producing business, we'll tell you — and we'll fix it.</p>
         </div>
       </div>
       <div class="why-item">
-        <div class="why-icon">🛡️</div>
+        <div class="why-icon">&#128737;&#65039;</div>
         <div>
           <h3>100% White-Hat SEO</h3>
           <p>No link spam. No fake reviews. No tactics that will get you penalized in six months. Our strategies are built to last through every Google update.</p>
         </div>
       </div>
       <div class="why-item">
-        <div class="why-icon">🚀</div>
+        <div class="why-icon">&#128640;</div>
         <div>
           <h3>AI Search Pioneers</h3>
           <p>We started optimizing for AI search engines before most agencies knew what GEO was. You benefit from real-world AI SEO experience — not theory.</p>
         </div>
       </div>
       <div class="why-item">
-        <div class="why-icon">🔄</div>
+        <div class="why-icon">&#128260;</div>
         <div>
           <h3>Client Success First</h3>
           <p>Our company grows when our clients grow. That's not a tagline — it's the actual business model. Your success is the only metric that matters here.</p>
         </div>
       </div>
       <div class="why-item">
-        <div class="why-icon">⚡</div>
+        <div class="why-icon">&#9889;</div>
         <div>
           <h3>Conversion Built In</h3>
           <p>Every page we optimize is built to convert visitors into leads. Getting found is half the job. Turning that traffic into customers is how you actually grow.</p>
@@ -1564,9 +1648,7 @@ footer {
   </div>
 </section>
 
-<!-- ============================================================ -->
 <!-- LONG-FORM CONTENT SECTION 4 — Industries + Why SEO fails -->
-<!-- ============================================================ -->
 <section style="background:rgba(255,255,255,0.015);" aria-labelledby="industries-why-seo-fails">
   <div class="container">
     <span class="section-tag">Industries &amp; Insight</span>
@@ -1619,8 +1701,8 @@ footer {
         <p>That honesty is what makes us different from most Denver SEO companies. And it's why our clients stay with us — because when we tell them something is working, they can actually trust it.</p>
 
         <div style="margin-top:24px; display:flex; gap:16px; flex-wrap:wrap;">
-          <a href="/denver-seo-audit/" class="btn-cta">Start With a Free Audit →</a>
-          <a href="tel:18004818638" class="btn-cta-outline">📞 Call Us Now</a>
+          <a href="/denver-seo-audit/" class="btn-cta">Start With a Free Audit &#8594;</a>
+          <a href="tel:18004818638" class="btn-cta-outline">&#128222; Call Us Now</a>
         </div>
       </div>
     </div>
@@ -1643,18 +1725,18 @@ footer {
         </tr>
       </thead>
       <tbody>
-        <tr><td>Google organic rankings</td><td><span class="check">✓</span> Yes</td><td><span class="check">✓</span> Yes + AI-enhanced</td></tr>
-        <tr><td>Google AI Overviews</td><td><span class="cross">✗</span> Rarely optimized</td><td><span class="check">✓</span> Core strategy</td></tr>
-        <tr><td>ChatGPT citation optimization</td><td><span class="cross">✗</span> Not offered</td><td><span class="check">✓</span> Full optimization</td></tr>
-        <tr><td>Perplexity SEO</td><td><span class="cross">✗</span> Unknown</td><td><span class="check">✓</span> Full optimization</td></tr>
-        <tr><td>Claude / Gemini / Grok SEO</td><td><span class="cross">✗</span> Not offered</td><td><span class="check">✓</span> All six engines</td></tr>
-        <tr><td>Agentic search readiness</td><td><span class="cross">✗</span> Not offered</td><td><span class="check">✓</span> Manus + agent optimization</td></tr>
-        <tr><td>Conversion rate optimization</td><td><span class="partial">~</span> Sometimes</td><td><span class="check">✓</span> Built into every page</td></tr>
-        <tr><td>Dedicated marketing expert</td><td><span class="partial">~</span> Rotating team</td><td><span class="check">✓</span> Your expert, always</td></tr>
-        <tr><td>Schema & entity building</td><td><span class="partial">~</span> Basic</td><td><span class="check">✓</span> 20+ schema types</td></tr>
-        <tr><td>Reporting: leads & revenue</td><td><span class="cross">✗</span> Rankings only</td><td><span class="check">✓</span> Real business metrics</td></tr>
-        <tr><td>Custom SEO software</td><td><span class="cross">✗</span> Off-the-shelf only</td><td><span class="check">✓</span> Custom tools built for you</td></tr>
-        <tr><td>Client success priority</td><td><span class="partial">~</span> Contractual</td><td><span class="check">✓</span> Our core value</td></tr>
+        <tr><td>Google organic rankings</td><td><span class="check">&#10003;</span> Yes</td><td><span class="check">&#10003;</span> Yes + AI-enhanced</td></tr>
+        <tr><td>Google AI Overviews</td><td><span class="cross">&#10007;</span> Rarely optimized</td><td><span class="check">&#10003;</span> Core strategy</td></tr>
+        <tr><td>ChatGPT citation optimization</td><td><span class="cross">&#10007;</span> Not offered</td><td><span class="check">&#10003;</span> Full optimization</td></tr>
+        <tr><td>Perplexity SEO</td><td><span class="cross">&#10007;</span> Unknown</td><td><span class="check">&#10003;</span> Full optimization</td></tr>
+        <tr><td>Claude / Gemini / Grok SEO</td><td><span class="cross">&#10007;</span> Not offered</td><td><span class="check">&#10003;</span> All six engines</td></tr>
+        <tr><td>Agentic search readiness</td><td><span class="cross">&#10007;</span> Not offered</td><td><span class="check">&#10003;</span> Manus + agent optimization</td></tr>
+        <tr><td>Conversion rate optimization</td><td><span class="partial">~</span> Sometimes</td><td><span class="check">&#10003;</span> Built into every page</td></tr>
+        <tr><td>Dedicated marketing expert</td><td><span class="partial">~</span> Rotating team</td><td><span class="check">&#10003;</span> Your expert, always</td></tr>
+        <tr><td>Schema &amp; entity building</td><td><span class="partial">~</span> Basic</td><td><span class="check">&#10003;</span> 20+ schema types</td></tr>
+        <tr><td>Reporting: leads &amp; revenue</td><td><span class="cross">&#10007;</span> Rankings only</td><td><span class="check">&#10003;</span> Real business metrics</td></tr>
+        <tr><td>Custom SEO software</td><td><span class="cross">&#10007;</span> Off-the-shelf only</td><td><span class="check">&#10003;</span> Custom tools built for you</td></tr>
+        <tr><td>Client success priority</td><td><span class="partial">~</span> Contractual</td><td><span class="check">&#10003;</span> Our core value</td></tr>
       </tbody>
     </table>
   </div>
@@ -1669,22 +1751,22 @@ footer {
 
     <div class="cards-grid" style="grid-template-columns: repeat(3,1fr); margin-bottom:48px;">
       <div class="card">
-        <div class="card-icon">📍</div>
+        <div class="card-icon">&#128205;</div>
         <h3>Google Business Profile</h3>
-        <p>Full GBP optimization — categories, attributes, posts, photos, Q&A, and review strategy to maximize map pack visibility.</p>
-        <a href="/local-seo-denver/">Local SEO Details →</a>
+        <p>Full GBP optimization — categories, attributes, posts, photos, Q&amp;A, and review strategy to maximize map pack visibility.</p>
+        <a href="/local-seo-denver/">Local SEO Details &#8594;</a>
       </div>
       <div class="card">
-        <div class="card-icon">⭐</div>
+        <div class="card-icon">&#11088;</div>
         <h3>Review Generation</h3>
         <p>We build ethical review systems that consistently generate authentic 5-star reviews — the #1 local ranking factor.</p>
-        <a href="/local-seo-denver/">Review Strategy →</a>
+        <a href="/local-seo-denver/">Review Strategy &#8594;</a>
       </div>
       <div class="card">
-        <div class="card-icon">🏙️</div>
+        <div class="card-icon">&#127961;&#65039;</div>
         <h3>Denver Neighborhood Pages</h3>
         <p>Hyper-local pages for Denver, Aurora, Lakewood, Thornton, Westminster, and more — each targeting local search intent.</p>
-        <a href="/denver-seo-services/">City Pages →</a>
+        <a href="/denver-seo-services/">City Pages &#8594;</a>
       </div>
     </div>
   </div>
@@ -1711,7 +1793,7 @@ footer {
         </div>
 
         <div style="display:flex; gap:16px; flex-wrap:wrap; margin-top:32px;">
-          <a href="/denver-ai-seo/" class="btn-cta">Explore AI SEO →</a>
+          <a href="/denver-ai-seo/" class="btn-cta">Explore AI SEO &#8594;</a>
           <a href="/denver-seo-audit/" class="btn-cta-outline">Free Audit</a>
         </div>
       </div>
@@ -1782,8 +1864,8 @@ footer {
     </div>
 
     <div style="display:flex; gap:16px; flex-wrap:wrap; margin-top:36px;">
-      <a href="/denver-seo-services/" class="btn-cta">View Our Services →</a>
-      <a href="https://www.searchconverts.com" target="_blank" rel="noopener" class="btn-cta-outline">Denver Web Design →</a>
+      <a href="/denver-seo-services/" class="btn-cta">View Our Services &#8594;</a>
+      <a href="https://www.searchconverts.com" target="_blank" rel="noopener" class="btn-cta-outline">Denver Web Design &#8594;</a>
     </div>
   </div>
 </section>
@@ -1797,12 +1879,12 @@ footer {
 
     <div style="display:flex; gap:20px; flex-wrap:wrap; margin-top:8px;">
       <a href="https://eyetoad.com" target="_blank" rel="noopener" style="color:var(--cyan); font-weight:600; font-family:var(--font-head); font-size:15px; text-decoration:none;">
-        → Visit Eye To Ad Media — Colorado's Premier Digital Marketing Agency
+        &#8594; Visit Eye To Ad Media — Colorado's Premier Digital Marketing Agency
       </a>
     </div>
     <div style="margin-top:12px;">
       <a href="https://eyetoad.com/denver-seo-services/" target="_blank" rel="noopener" style="color:var(--gray2); font-size:14px; text-decoration:none; font-family:var(--font-mono);">
-        → Explore our comprehensive Denver SEO services at eyetoad.com
+        &#8594; Explore our comprehensive Denver SEO services at eyetoad.com
       </a>
     </div>
   </div>
@@ -1821,24 +1903,24 @@ footer {
 
         <div style="display:flex; flex-direction:column; gap:16px; margin-bottom:32px;">
           <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:var(--gray2);">
-            <span style="color:var(--teal); font-size:18px;">✓</span> Free comprehensive SEO audit
+            <span style="color:var(--teal); font-size:18px;">&#10003;</span> Free comprehensive SEO audit
           </div>
           <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:var(--gray2);">
-            <span style="color:var(--teal); font-size:18px;">✓</span> Dedicated marketing expert assigned
+            <span style="color:var(--teal); font-size:18px;">&#10003;</span> Dedicated marketing expert assigned
           </div>
           <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:var(--gray2);">
-            <span style="color:var(--teal); font-size:18px;">✓</span> Real metrics. No vanity numbers.
+            <span style="color:var(--teal); font-size:18px;">&#10003;</span> Real metrics. No vanity numbers.
           </div>
           <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:var(--gray2);">
-            <span style="color:var(--teal); font-size:18px;">✓</span> Google + all 6 AI search engines
+            <span style="color:var(--teal); font-size:18px;">&#10003;</span> Google + all 6 AI search engines
           </div>
           <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:var(--gray2);">
-            <span style="color:var(--teal); font-size:18px;">✓</span> 100% white-hat. Long-term results.
+            <span style="color:var(--teal); font-size:18px;">&#10003;</span> 100% white-hat. Long-term results.
           </div>
         </div>
 
         <a href="tel:18004818638" class="btn-cta" style="font-size:18px; padding:18px 36px;">
-          📞 Call 1-800-481-8638
+          &#128222; Call 1-800-481-8638
         </a>
       </div>
 
@@ -1875,13 +1957,13 @@ footer {
             <input type="text" name="website" placeholder="Your Website URL" autocomplete="url">
           </div>
           <div class="form-group">
-            <input type="text" name="business" placeholder="Business Name & Industry">
+            <input type="text" name="business" placeholder="Business Name &amp; Industry">
           </div>
           <div class="form-group">
             <textarea name="message" placeholder="What's your biggest SEO challenge?" rows="3"></textarea>
           </div>
-          <button type="submit" class="btn-submit">Get My Free Strategy Session →</button>
-          <p class="form-trust">🔒 Your info is private. No spam. No pressure.</p>
+          <button type="submit" class="btn-submit">Get My Free Strategy Session &#8594;</button>
+          <p class="form-trust">&#128274; Your info is private. No spam. No pressure.</p>
         </form>
       </div>
     </div>
@@ -1901,9 +1983,7 @@ footer {
   </div>
 </section>
 
-<!-- ============================================================ -->
 <!-- FOOTER — WHITE BACKGROUND -->
-<!-- ============================================================ -->
 <footer role="contentinfo">
   <div class="container">
     <div class="footer-grid">
@@ -1915,7 +1995,7 @@ footer {
           Denver's AI-powered SEO company. We rank your business in Google, ChatGPT, Perplexity, Claude, Gemini, Grok, and Manus. Managed by <a href="https://eyetoad.com" target="_blank" rel="noopener">Eye To Ad Media</a>.
         </p>
         <div style="margin-top:16px;">
-          <a href="tel:18004818638" class="footer-phone-footer">📞 1-800-481-8638</a>
+          <a href="tel:18004818638" class="footer-phone-footer">&#128222; 1-800-481-8638</a>
         </div>
       </div>
 
@@ -1959,7 +2039,7 @@ footer {
     </div>
 
     <div class="footer-bottom">
-      <div>© 2026 DenverSEO.io — Managed by <a href="https://eyetoad.com" target="_blank" rel="noopener">Eye To Ad Media</a>. All rights reserved.</div>
+      <div>&#169; 2026 DenverSEO.io — Managed by <a href="https://eyetoad.com" target="_blank" rel="noopener">Eye To Ad Media</a>. All rights reserved.</div>
       <div style="display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
         <a href="/sitemap.xml">XML Sitemap</a>
         <a href="/robots.txt">Robots.txt</a>
@@ -1973,16 +2053,16 @@ footer {
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Time trap
-  const ts = Date.now().toString();
-  const hft = document.getElementById('hero-form-time');
-  const bft = document.getElementById('bottom-form-time');
+  var ts = Date.now().toString();
+  var hft = document.getElementById('hero-form-time');
+  var bft = document.getElementById('bottom-form-time');
   if (hft) hft.value = ts;
   if (bft) bft.value = ts;
 
   function addTimeTrap(formId) {
-    const form = document.getElementById(formId);
+    var form = document.getElementById(formId);
     if (!form) return;
-    const start = Date.now();
+    var start = Date.now();
     form.addEventListener('submit', function(e) {
       if (Date.now() - start < 3000) { e.preventDefault(); return false; }
     });
@@ -1990,8 +2070,34 @@ document.addEventListener('DOMContentLoaded', function() {
   addTimeTrap('hero-form');
   addTimeTrap('bottom-form');
 
+  // Hamburger menu
+  var hBtn = document.getElementById('hamburger-btn');
+  var mNav = document.getElementById('mobile-nav');
+  if (hBtn && mNav) {
+    hBtn.addEventListener('click', function() {
+      var isOpen = mNav.classList.contains('open');
+      mNav.classList.toggle('open');
+      hBtn.classList.toggle('open');
+      hBtn.setAttribute('aria-expanded', String(!isOpen));
+    });
+    mNav.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        mNav.classList.remove('open');
+        hBtn.classList.remove('open');
+        hBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+    document.addEventListener('click', function(e) {
+      if (!hBtn.contains(e.target) && !mNav.contains(e.target)) {
+        mNav.classList.remove('open');
+        hBtn.classList.remove('open');
+        hBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
   // FAQ accordion
-  const faqs = [
+  var faqs = [
     ["What is AI SEO and why does my Denver business need it?", "AI SEO is the practice of optimizing your business to appear in AI-generated answers from tools like ChatGPT, Perplexity, Claude, and Google AI Overviews. Millions of people now ask AI assistants for business recommendations instead of clicking traditional search results. If your Denver business isn't optimized for AI search, you're invisible to a growing segment of buyers."],
     ["What is the difference between traditional SEO and AIO SEO?", "Traditional SEO targets Google's blue-link results. AIO (AI Overview Optimization) targets the AI-generated answer boxes at the top of Google search and the citations given by AI assistants. AIO SEO requires structured content, entity building, schema markup, and answer-oriented writing — all of which we specialize in."],
     ["What is GEO — Generative Engine Optimization?", "GEO stands for Generative Engine Optimization. It's the practice of optimizing your content so AI language models cite your business as an authoritative source. GEO focuses on entity authority, structured data, citation-worthy content, and being the definitive source in your industry."],
@@ -2014,21 +2120,15 @@ document.addEventListener('DOMContentLoaded', function() {
     ["What happens if Google updates its algorithm?", "White-hat SEO built on genuine authority is the best protection against algorithm updates. We monitor Google's updates in real time and adapt proactively. Our AI search optimization adds an additional layer of resilience — businesses visible in multiple AI engines are less dependent on any single Google update."]
   ];
 
-  const faqList = document.getElementById('faq-list');
+  var faqList = document.getElementById('faq-list');
   if (faqList) {
     faqs.forEach(function(f, i) {
-      const item = document.createElement('div');
+      var item = document.createElement('div');
       item.className = 'faq-item';
       item.setAttribute('role', 'listitem');
-      item.innerHTML = `
-        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-${i}" id="faq-q-${i}">
-          ${f[0]}
-          <span class="faq-chevron" aria-hidden="true">▾</span>
-        </button>
-        <div class="faq-a" id="faq-a-${i}" role="region" aria-labelledby="faq-q-${i}">${f[1]}</div>
-      `;
+      item.innerHTML = '<button class="faq-q" aria-expanded="false" aria-controls="faq-a-' + i + '" id="faq-q-' + i + '">' + f[0] + '<span class="faq-chevron" aria-hidden="true">&#9662;</span></button><div class="faq-a" id="faq-a-' + i + '" role="region" aria-labelledby="faq-q-' + i + '">' + f[1] + '</div>';
       item.querySelector('.faq-q').addEventListener('click', function() {
-        const open = item.classList.contains('open');
+        var open = item.classList.contains('open');
         document.querySelectorAll('.faq-item.open').forEach(function(el) {
           el.classList.remove('open');
           el.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
