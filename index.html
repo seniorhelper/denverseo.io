@@ -1074,7 +1074,7 @@ footer {
       </a>
       <a class="btn-audit-header" href="/denver-seo-audit/">Free Audit</a>
     </div>
-    <button class="hamburger-btn" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+    <button class="hamburger-btn" id="hamburger-btn" type="button" onclick="var n=document.getElementById('mobile-nav');var o=n.classList.toggle('open');this.classList.toggle('open');this.setAttribute('aria-expanded',String(o));event.stopPropagation();" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
       <span></span>
       <span></span>
       <span></span>
@@ -2020,6 +2020,4 @@ footer {
           <li><a href="/denver-ai-seo/">AI SEO Denver</a></li>
           <li><a href="https://denverseo.io/ai-search-optimization-denver/">AI Search Optimization</a></li>
           <li><a href="/local-seo-denver/">Local SEO Denver</a></li>
-          <li><a href="/generative-engine-optimization/">GEO Denver</a></li>
-          <li><a href="/denver-seo-audit/">Free SEO Audit</a></li>
-          <li><a href="/denver-seo-pricing/">SEO Pricing</a>
+   
