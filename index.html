@@ -410,6 +410,20 @@ section { padding: 90px 0; }
 .accent { color: var(--cyan); }
 .accent-o { color: var(--orange); }
 
+/* TWO-COLUMN PROSE GRID — collapses on mobile to fix skyscraper text */
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+@media (max-width: 1024px) {
+  .two-col-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
 /* CONTENT PROSE — for the long-form sections */
 .prose {
   max-width: 820px;
@@ -1028,15 +1042,6 @@ footer {
   .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
   .hero-content { padding: 0 24px 40px; }
   .hero-form-row { gap: 32px; }
-  /* Fix inline-grid two-column skyscraper text on mobile */
-  div[style*="grid-template-columns: 1fr 1fr"],
-  div[style*="grid-template-columns:1fr 1fr"],
-  div[style*="grid-template-columns: repeat(2, 1fr)"] {
-    display: block !important;
-  }
-  div[style*="grid-template-columns: repeat(3,1fr)"] {
-    grid-template-columns: 1fr !important;
-  }
 }
 </style>
 </head>
@@ -1278,7 +1283,7 @@ footer {
     <span class="section-tag">Denver SEO Explained</span>
     <h2 id="denver-seo-explained" class="section-title">What Is <span class="accent">Denver SEO</span> — and Why Does It Matter Right Now?</h2>
 
-    <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;">
+    <div class="two-col-grid">
       <div class="prose">
         <p>Denver SEO is the practice of optimizing your website and online presence so your business ranks at the top of search results. But here's the thing — search has changed dramatically. It's not just about Google anymore.</p>
 
@@ -1397,7 +1402,7 @@ footer {
     <span class="section-tag">The AI Search Revolution</span>
     <h2 id="ai-search-deep-dive" class="section-title">Your Customers Have <span class="accent">Changed How They Search.</span><br>Have You Changed Your Strategy?</h2>
 
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start;">
+    <div class="two-col-grid">
       <div class="prose">
         <p>Think back two years. Somebody wanted to find the best HVAC company in Denver. They typed "HVAC Denver" into Google, scanned the map pack, and picked one of the top three results. Simple. Predictable. Easy to optimize for.</p>
 
@@ -1525,7 +1530,7 @@ footer {
     <h2 id="geo-local-strategy" class="section-title">The Three Pillars of <span class="accent">Dominating Denver Search</span></h2>
 
     <div class="prose" style="max-width:100%;">
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:60px;">
+      <div class="two-col-grid">
         <div>
           <h3>Pillar 1: Generative Engine Optimization (GEO)</h3>
           <p>GEO is the newest — and most misunderstood — discipline in digital marketing. Put simply, it's the practice of making your business the entity that AI models choose to cite when generating answers in your industry or location.</p>
@@ -1663,7 +1668,7 @@ footer {
     <span class="section-tag">Industries &amp; Insight</span>
     <h2 id="industries-why-seo-fails" class="section-title">Denver SEO for <span class="accent">Every Industry</span> — and Why Most SEO Fails</h2>
 
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start;">
+    <div class="two-col-grid">
       <div class="prose">
         <h3>Which Denver Businesses Benefit Most from SEO?</h3>
         <p>The short answer is: almost every business that depends on customers finding them. But certain industries see some of the most dramatic returns on SEO investment.</p>
@@ -2013,5 +2018,12 @@ footer {
         <ul>
           <li><a href="/denver-seo-services/">Denver SEO Services</a></li>
           <li><a href="/denver-ai-seo/">AI SEO Denver</a></li>
-          <li><a href="/ai-search-optimization-denver/">AI Search Optimization</a></li>
-          <li><a href="/local-seo-den
+          <li><a href="https://denverseo.io/ai-search-optimization-denver/">AI Search Optimization</a></li>
+          <li><a href="/local-seo-denver/">Local SEO Denver</a></li>
+          <li><a href="/generative-engine-optimization/">GEO Denver</a></li>
+          <li><a href="/denver-seo-audit/">Free SEO Audit</a></li>
+          <li><a href="/denver-seo-pricing/">SEO Pricing</a></li>
+        </ul>
+      </div>
+
+      <di
