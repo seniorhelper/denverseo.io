@@ -1085,6 +1085,22 @@ footer {
   </div>
 </nav>
 
+<script>
+/* Hamburger — runs immediately, both elements exist in DOM at this point */
+(function() {
+  var btn = document.getElementById('hamburger-btn');
+  var nav = document.getElementById('mobile-nav');
+  if (!btn || !nav) return;
+  function openNav()  { nav.classList.add('open');    btn.classList.add('open');    btn.setAttribute('aria-expanded','true');  }
+  function closeNav() { nav.classList.remove('open'); btn.classList.remove('open'); btn.setAttribute('aria-expanded','false'); }
+  function toggle(e)  { e.stopPropagation(); e.preventDefault(); nav.classList.contains('open') ? closeNav() : openNav(); }
+  btn.addEventListener('touchstart', toggle, {passive:false});
+  btn.addEventListener('click', function(e){ e.stopPropagation(); });
+  var links = nav.querySelectorAll('a');
+  for (var i=0; i<links.length; i++) links[i].addEventListener('click', closeNav);
+}());
+</script>
+
 <!-- HERO — video fills full viewport, content at bottom -->
 <section class="hero" aria-label="Hero section">
   <div class="hero-video-wrap">
@@ -1994,20 +2010,4 @@ footer {
           <img src="images/denver-seo-logo.png" alt="DenverSEO.io Logo" width="200" loading="lazy">
         </div>
         <p class="footer-about">
-          Denver's AI-powered SEO company. We rank your business in Google, ChatGPT, Perplexity, Claude, Gemini, Grok, and Manus. Managed by <a href="https://eyetoad.com" target="_blank" rel="noopener">Eye To Ad Media</a>.
-        </p>
-        <div style="margin-top:16px;">
-          <a href="tel:18004818638" class="footer-phone-footer">&#128222; 1-800-481-8638</a>
-        </div>
-      </div>
-
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="/denver-seo-services/">Denver SEO Services</a></li>
-          <li><a href="/denver-ai-seo/">AI SEO Denver</a></li>
-          <!-- *** CHANGE 2 — added missing footer link *** -->
-          <li><a href="/ai-search-optimization-denver/">AI Search Optimization</a></li>
-          <li><a href="/local-seo-denver/">Local SEO Denver</a></li>
-          <li><a href="/generative-engine-optimization/">GEO Denver</a></li>
-         
+          Denver's AI-p
