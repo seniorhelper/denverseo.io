@@ -1,0 +1,62 @@
+# DenverSEO.io
+
+> DenverSEO.io is a search engineering resource published by Eye To Ad Media, a Denver-headquartered marketing agency founded in 2012 by Zachary Tye Wennstedt. It covers technical SEO, AI search optimization, answer engine optimization, web development, and free browser-based developer tools.
+
+Eye To Ad Media is headquartered at 1001 Bannock St #660, Denver, CO 80204 and works with businesses worldwide. Phone: 1-800-481-8638. It is BBB A+ accredited and rated 5.0 on Google across 60 reviews. It never guarantees rankings.
+
+## Services
+- [Denver SEO, engineered from the code up](https://denverseo.io/): Denver SEO built at the code level: technical SEO, AI search optimization, schema and fast custom development that Google and AI engines can read. Call 1-800-481-8638.
+- [Technical SEO services for sites Google can actually read](https://denverseo.io/denver-seo-company/): Technical SEO services that fix crawling, rendering, indexing, speed and schema at the code level. Engineered in Denver for businesses worldwide. Call 1-800-481-8638.
+- [An SEO web developer writes code search engines trust](https://denverseo.io/denver-seo-services/): SEO web development: developers who code sites for search from the first commit. Schema, speed, clean HTML and conversion paths built in. Call 1-800-481-8638.
+- [An SEO technical audit that finds what dashboards miss](https://denverseo.io/denver-seo-audit/): A technical SEO audit that inspects crawling, rendering, indexing, speed, schema and AI readability, with prioritized fixes. Engineered in Denver. Call 1-800-481-8638.
+- [A web development company that codes for search](https://denverseo.io/web-development-company/): A web development company that hand-codes fast, secure sites with SEO, schema and conversion built in. Headquartered in Denver, building worldwide.
+- [Web development in Denver](https://denverseo.io/web-development-denver/): Web development in Denver: custom-coded, fast, SEO-ready websites from a Denver-headquartered team. Lead gen sites, tools, 3D and chatbots. Call 1-800-481-8638.
+- [Website maintenance services](https://denverseo.io/website-maintenance/): Website maintenance services that keep your site secure, fast, indexed and converting: updates, backups, monitoring, form tests and SEO health checks.
+- [JavaScript SEO for React and modern frameworks](https://denverseo.io/javascript-seo/): JavaScript SEO for React, Next.js, Vue and single-page apps: rendering, crawlable links, metadata and schema that search engines and AI crawlers can read.
+- [Programmatic SEO](https://denverseo.io/programmatic-seo/): Programmatic SEO done right: data-driven templates that produce thousands of useful pages, with quality controls that keep Google from seeing spam.
+- [Page speed optimization](https://denverseo.io/site-speed/): Page speed optimization that fixes LCP, INP and CLS at the code level. See what a 0.1-second improvement could be worth with our speed calculator. Call 1-800-481-8638.
+- [AI search optimization: be the answer every engine agrees on](https://denverseo.io/ai-search-optimization-denver/): AI search optimization engineered at the code level: entities, schema, quotable answers and crawl access so ChatGPT, Gemini, Perplexity and AI Overviews can choose you.
+- [Answer engine optimization: write it so machines can quote it](https://denverseo.io/generative-engine-optimization/): Answer engine optimization and generative engine optimization explained by engineers: how answers get chosen, what to build, and how to measure it. Call 1-800-481-8638.
+- [A sales chatbot for your website](https://denverseo.io/sales-chatbot/): A sales chatbot for your website, trained on your services and a real sales playbook. Answers at night, qualifies honestly and hands hot leads to your phone.
+- [3D website design and development](https://denverseo.io/3d-websites/): 3D website design and development with WebGL and three.js: interactive products, walk-in rooms and immersive brand experiences that still load fast. Step inside The Lab.
+- [The $50K website, subscribe-to-own](https://denverseo.io/50k-website/): A website valued at $30,000 to $50,000, from $99 a month on a subscribe-to-own plan, with a buyout option at 24 to 36 months. For businesses we believe in.
+- [Local pack SEO, from the engineering side](https://denverseo.io/local-seo-denver/): Local pack SEO explained at the technical level: Google Business Profile data, local schema, citations, proximity and reviews, and how to engineer each signal.
+
+## Free tools
+- [Free SEO and web developer tools](https://denverseo.io/tools/): Free developer-grade SEO tools: schema validator with a 3D graph, AI crawler checker, llms.txt generator, readability analyzer, cost calculator and link graph.
+- [Schema markup validator](https://denverseo.io/tools/schema-markup-validator/): Free schema markup validator: paste JSON-LD to find syntax errors, missing required properties, bad URLs and dates, and see your entities as a rotating 3D graph.
+- [AI crawler checker](https://denverseo.io/tools/ai-crawler-checker/): Free AI crawler checker: paste robots.txt and see whether GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended and 13 other bots can access any path.
+- [llms.txt generator](https://denverseo.io/tools/llms-txt-generator/): Free llms.txt generator: build a valid llms.txt file following the proposed standard, with a summary and linked sections that point AI tools to your best pages.
+- [Machine-readability analyzer](https://denverseo.io/tools/machine-readability-analyzer/): Free machine-readability analyzer: paste a page's HTML to score titles, headings, schema, quotable sentences, alt text and whether AI agents can use its forms.
+- [Website development cost calculator](https://denverseo.io/tools/website-development-cost-calculator/): Free website development cost calculator: choose site type, pages, features and hourly rate to get estimated build hours and a planning cost range.
+- [Internal link graph](https://denverseo.io/tools/internal-link-graph/): Free internal link graph tool: list your page links to find orphan pages, pages buried more than three clicks deep and dead ends, visualized as a rotating 3D map.
+
+## Learn
+- [How search engines work](https://denverseo.io/how-search-engines-work/): How search engines work, step by step: crawling, rendering, indexing, ranking and AI answers. An interactive lesson that also explains how SEO works at each step.
+- [SEO and AI search glossary](https://denverseo.io/glossary/): SEO glossary and AI glossary in plain English: 60 terms from AEO and GEO to Core Web Vitals, llms.txt, RAG, schema and technical SEO, each defined in a sentence or two.
+- [Research and sources](https://denverseo.io/research/): The statistics and primary sources behind our work: Deloitte on site speed, Pew on ChatGPT adoption, Google on Core Web Vitals and AI features, RFC 9309 and more.
+- [What AI crawlers actually read on your page](https://denverseo.io/blog/what-ai-crawlers-read/): AI crawlers do not see your page the way you do. Here is what they fetch, what they skip, and the five changes that make your content usable to answer engines.
+- [Schema markup mistakes we fix most often](https://denverseo.io/blog/schema-markup-mistakes/): The structured data errors that quietly waste your schema: invalid JSON, markup that does not match the page, disconnected entities, self-serving reviews and more.
+- [Agent-ready forms: let AI agents fill out your forms](https://denverseo.io/blog/agent-ready-forms/): AI agents are starting to fill out forms for people. Labels, autocomplete, named buttons and clear errors decide whether they succeed on your site.
+- [Website maintenance checklist: monthly, quarterly, yearly](https://denverseo.io/blog/website-maintenance-checklist/): A practical website maintenance checklist split by rhythm, covering security, backups, forms, speed, SEO health, content and accessibility.
+- [How AI is changing SEO](https://denverseo.io/how-ai-is-changing-seo/): How AI is changing SEO: answer engines, AI Overviews and agents, what still works, what changed, and what to build now.
+- [How long does SEO take? Here is the honest timeline](https://denverseo.io/how-long-does-seo-take-denver/): How long SEO takes, explained honestly: what happens in months 1 to 3, 4 to 6 and 7 to 12, what speeds it up, and what slows it down.
+- [Why most SEO fails, and how to see it coming](https://denverseo.io/why-most-denver-seo-fails/): Why most SEO fails: activity instead of outcomes, rankings instead of revenue, and technical debt nobody fixes. How to spot each failure mode early.
+
+## AI engines
+- [ChatGPT search optimization](https://denverseo.io/chatgpt-search-optimization/): ChatGPT search optimization: how ChatGPT finds, reads and cites businesses, and the technical and content work that makes yours the one it recommends.
+- [Perplexity SEO](https://denverseo.io/perplexity-seo/): Perplexity SEO: how Perplexity picks and numbers its sources, and the engineering and content work that earns your business a citation.
+- [Gemini SEO](https://denverseo.io/gemini-seo/): Gemini SEO: how Google Gemini blends classic search signals with generative answers, and how to engineer a site that wins in both.
+- [Claude SEO](https://denverseo.io/claude-seo/): Claude SEO: how Claude researches and compares vendors, why specific, well-documented pages win, and how to get cited in Claude answers.
+- [Grok SEO](https://denverseo.io/grok-seo/): Grok SEO: how Grok blends live X posts with web results, and how businesses earn mentions when timing and conversation matter.
+- [Manus SEO and agentic search](https://denverseo.io/manus-seo/): Manus SEO and agentic search: how AI agents research, compare and act for users, and how to make your site the one they select and book.
+- [Google AI Overviews SEO](https://denverseo.io/google-ai-overviews-seo/): Google AI Overviews SEO: how pages get cited in the AI Overview box at the top of Google, and the technical and content work that improves your odds.
+- [Using AI for SEO: faster hands, human judgment](https://denverseo.io/denver-ai-seo/): Using AI for SEO without getting burned: where AI speeds up research, auditing and coding, where humans must decide, and what Google says about AI content.
+
+## Optional
+- [About](https://denverseo.io/about/): Who publishes DenverSEO.io.
+- [Built here](https://denverseo.io/built-here/): Live platforms the team has built.
+- [Open source](https://denverseo.io/open-source/): MIT-licensed code from the tools.
+- [Glossary API](https://denverseo.io/api/glossary.json): All glossary terms as JSON.
+- [Tools API](https://denverseo.io/api/tools.json): The free tools as JSON.
+- [Full text](https://denverseo.io/llms-full.txt): Direct answers and FAQs for every page in one file.

@@ -1,0 +1,368 @@
+{
+ "name": "DenverSEO.io SEO and AI Search Glossary",
+ "publisher": "Eye To Ad Media",
+ "url": "https://denverseo.io/glossary/",
+ "updated": "2026-09-29",
+ "terms": [
+  {
+   "term": "AEO",
+   "alt": "Answer engine optimization",
+   "definition": "Structuring content so AI assistants and search features can lift it as a direct answer. Rewards clear definitions, specific facts and structured data.",
+   "url": "https://denverseo.io/glossary/#aeo"
+  },
+  {
+   "term": "AI crawler",
+   "alt": null,
+   "definition": "A bot operated by an AI company that fetches web pages, either to train models (like GPTBot) or to answer live questions and cite sources (like OAI-SearchBot).",
+   "url": "https://denverseo.io/glossary/#ai-crawler"
+  },
+  {
+   "term": "AI Overview",
+   "alt": null,
+   "definition": "An AI-generated summary Google shows at the top of some search results, with links to the sources it drew from.",
+   "url": "https://denverseo.io/glossary/#ai-overview"
+  },
+  {
+   "term": "AI agent",
+   "alt": "Agentic AI",
+   "definition": "Software that takes actions for a user, such as researching vendors, filling forms or booking appointments, instead of only answering questions.",
+   "url": "https://denverseo.io/glossary/#ai-agent"
+  },
+  {
+   "term": "Alt text",
+   "alt": null,
+   "definition": "A text description of an image in the alt attribute. Used by screen readers and by search engines to understand images.",
+   "url": "https://denverseo.io/glossary/#alt-text"
+  },
+  {
+   "term": "Anchor text",
+   "alt": null,
+   "definition": "The clickable words of a link. It tells people and search engines what the linked page is about.",
+   "url": "https://denverseo.io/glossary/#anchor-text"
+  },
+  {
+   "term": "Answer engine",
+   "alt": null,
+   "definition": "A search tool that responds with a written answer instead of a list of links, such as ChatGPT search, Perplexity or Google AI Mode.",
+   "url": "https://denverseo.io/glossary/#answer-engine"
+  },
+  {
+   "term": "Backlink",
+   "alt": null,
+   "definition": "A link from another website to yours. Links from relevant, trusted sites are a strong signal of authority.",
+   "url": "https://denverseo.io/glossary/#backlink"
+  },
+  {
+   "term": "Bingbot",
+   "alt": null,
+   "definition": "Microsoft's web crawler for Bing. Bing's index also feeds several AI tools, including Microsoft Copilot.",
+   "url": "https://denverseo.io/glossary/#bingbot"
+  },
+  {
+   "term": "Breadcrumb",
+   "alt": null,
+   "definition": "A navigation trail showing where a page sits in a site's hierarchy. BreadcrumbList schema describes it to search engines.",
+   "url": "https://denverseo.io/glossary/#breadcrumb"
+  },
+  {
+   "term": "Canonical URL",
+   "alt": null,
+   "definition": "The preferred version of a page when several URLs show the same content, declared with a rel=canonical link.",
+   "url": "https://denverseo.io/glossary/#canonical-url"
+  },
+  {
+   "term": "Citation (AI)",
+   "alt": null,
+   "definition": "A link or source reference an AI answer shows for information it used. Being cited is the AI-era version of ranking.",
+   "url": "https://denverseo.io/glossary/#citation-ai"
+  },
+  {
+   "term": "ClaudeBot",
+   "alt": null,
+   "definition": "Anthropic's web crawler. Anthropic also documents separate agents for search and user-initiated fetching.",
+   "url": "https://denverseo.io/glossary/#claudebot"
+  },
+  {
+   "term": "CLS",
+   "alt": "Cumulative Layout Shift",
+   "definition": "A Core Web Vitals metric for unexpected layout movement. Good is 0.1 or less.",
+   "url": "https://denverseo.io/glossary/#cls"
+  },
+  {
+   "term": "Core Web Vitals",
+   "alt": null,
+   "definition": "Google's set of real-user metrics for loading (LCP), responsiveness (INP) and visual stability (CLS).",
+   "url": "https://denverseo.io/glossary/#core-web-vitals"
+  },
+  {
+   "term": "Crawl budget",
+   "alt": null,
+   "definition": "How many URLs a search engine is able and willing to crawl on a site in a given time. Matters mostly for very large sites.",
+   "url": "https://denverseo.io/glossary/#crawl-budget"
+  },
+  {
+   "term": "Crawling",
+   "alt": null,
+   "definition": "The process of bots fetching web pages and following links to discover more pages.",
+   "url": "https://denverseo.io/glossary/#crawling"
+  },
+  {
+   "term": "E-E-A-T",
+   "alt": "Experience, Expertise, Authoritativeness, Trustworthiness",
+   "definition": "The qualities Google's quality rater guidelines use to evaluate content. Trust is the most important of the four.",
+   "url": "https://denverseo.io/glossary/#e-e-a-t"
+  },
+  {
+   "term": "Entity",
+   "alt": null,
+   "definition": "A distinct, identifiable thing, such as a business, person, place or product, that search engines and AI models recognize and connect to facts.",
+   "url": "https://denverseo.io/glossary/#entity"
+  },
+  {
+   "term": "Featured snippet",
+   "alt": null,
+   "definition": "A highlighted excerpt Google sometimes shows at the top of results to answer a query directly.",
+   "url": "https://denverseo.io/glossary/#featured-snippet"
+  },
+  {
+   "term": "GEO",
+   "alt": "Generative engine optimization",
+   "definition": "The practice of earning visibility and citations inside AI-generated answers from tools like ChatGPT, Gemini and Perplexity.",
+   "url": "https://denverseo.io/glossary/#geo"
+  },
+  {
+   "term": "Google Business Profile",
+   "alt": "GBP",
+   "definition": "Google's free listing for local businesses that appears in Maps and the local pack.",
+   "url": "https://denverseo.io/glossary/#google-business-profile"
+  },
+  {
+   "term": "Google-Extended",
+   "alt": null,
+   "definition": "A robots.txt control token that lets sites choose whether Google may use their content for Gemini and related AI training and grounding. It does not affect Google Search.",
+   "url": "https://denverseo.io/glossary/#google-extended"
+  },
+  {
+   "term": "Googlebot",
+   "alt": null,
+   "definition": "Google's main web crawler for Search.",
+   "url": "https://denverseo.io/glossary/#googlebot"
+  },
+  {
+   "term": "GPTBot",
+   "alt": null,
+   "definition": "OpenAI's crawler for collecting training data. Separate from OAI-SearchBot, which supports ChatGPT search.",
+   "url": "https://denverseo.io/glossary/#gptbot"
+  },
+  {
+   "term": "Headless browser",
+   "alt": null,
+   "definition": "A browser without a visible window, used by search engines and testing tools to render pages and run JavaScript.",
+   "url": "https://denverseo.io/glossary/#headless-browser"
+  },
+  {
+   "term": "Hreflang",
+   "alt": null,
+   "definition": "An attribute that tells search engines which language or regional version of a page to show.",
+   "url": "https://denverseo.io/glossary/#hreflang"
+  },
+  {
+   "term": "Index",
+   "alt": null,
+   "definition": "The database of pages a search engine has stored and can show in results.",
+   "url": "https://denverseo.io/glossary/#index"
+  },
+  {
+   "term": "INP",
+   "alt": "Interaction to Next Paint",
+   "definition": "A Core Web Vitals metric for how quickly a page responds to user input. Good is 200 milliseconds or less.",
+   "url": "https://denverseo.io/glossary/#inp"
+  },
+  {
+   "term": "Internal link",
+   "alt": null,
+   "definition": "A link from one page to another on the same site. It helps discovery and signals which pages matter.",
+   "url": "https://denverseo.io/glossary/#internal-link"
+  },
+  {
+   "term": "JSON-LD",
+   "alt": null,
+   "definition": "The script-based format Google recommends for structured data, written as JSON inside a script tag.",
+   "url": "https://denverseo.io/glossary/#json-ld"
+  },
+  {
+   "term": "Knowledge Graph",
+   "alt": null,
+   "definition": "Google's database of entities and the facts connecting them, which powers knowledge panels and informs AI features.",
+   "url": "https://denverseo.io/glossary/#knowledge-graph"
+  },
+  {
+   "term": "LCP",
+   "alt": "Largest Contentful Paint",
+   "definition": "A Core Web Vitals metric for when the main content finishes loading. Good is 2.5 seconds or less.",
+   "url": "https://denverseo.io/glossary/#lcp"
+  },
+  {
+   "term": "LLM",
+   "alt": "Large language model",
+   "definition": "An AI model trained on large amounts of text that can generate and understand language, such as the models behind ChatGPT, Claude and Gemini.",
+   "url": "https://denverseo.io/glossary/#llm"
+  },
+  {
+   "term": "llms.txt",
+   "alt": null,
+   "definition": "A proposed Markdown file at a site's root that summarizes the site for language models and links to key pages.",
+   "url": "https://denverseo.io/glossary/#llms-txt"
+  },
+  {
+   "term": "Local pack",
+   "alt": "Map pack",
+   "definition": "The block of three map listings Google shows for local searches.",
+   "url": "https://denverseo.io/glossary/#local-pack"
+  },
+  {
+   "term": "Meta description",
+   "alt": null,
+   "definition": "A short summary of a page in its HTML head. Search engines may show it as the snippet under the title.",
+   "url": "https://denverseo.io/glossary/#meta-description"
+  },
+  {
+   "term": "Noindex",
+   "alt": null,
+   "definition": "A robots meta tag or header telling search engines not to include a page in their index.",
+   "url": "https://denverseo.io/glossary/#noindex"
+  },
+  {
+   "term": "OAI-SearchBot",
+   "alt": null,
+   "definition": "OpenAI's crawler for surfacing websites in ChatGPT search results.",
+   "url": "https://denverseo.io/glossary/#oai-searchbot"
+  },
+  {
+   "term": "Orphan page",
+   "alt": null,
+   "definition": "A page with no internal links pointing to it.",
+   "url": "https://denverseo.io/glossary/#orphan-page"
+  },
+  {
+   "term": "PerplexityBot",
+   "alt": null,
+   "definition": "Perplexity's crawler for building the index that powers its cited answers.",
+   "url": "https://denverseo.io/glossary/#perplexitybot"
+  },
+  {
+   "term": "Programmatic SEO",
+   "alt": null,
+   "definition": "Creating many search-targeted pages from a template and a structured dataset.",
+   "url": "https://denverseo.io/glossary/#programmatic-seo"
+  },
+  {
+   "term": "Prompt",
+   "alt": null,
+   "definition": "The question or instruction a user gives an AI model. Prompts are the new search queries.",
+   "url": "https://denverseo.io/glossary/#prompt"
+  },
+  {
+   "term": "Query fan-out",
+   "alt": null,
+   "definition": "A technique where an AI search system breaks one question into many related searches, then combines the results into one answer.",
+   "url": "https://denverseo.io/glossary/#query-fan-out"
+  },
+  {
+   "term": "RAG",
+   "alt": "Retrieval-augmented generation",
+   "definition": "A method where an AI system retrieves relevant documents first, then generates an answer grounded in them. Most AI search works this way.",
+   "url": "https://denverseo.io/glossary/#rag"
+  },
+  {
+   "term": "Redirect (301)",
+   "alt": null,
+   "definition": "A permanent redirect sending visitors and search engines from an old URL to a new one, passing along its signals.",
+   "url": "https://denverseo.io/glossary/#redirect-301"
+  },
+  {
+   "term": "Rendering",
+   "alt": null,
+   "definition": "Running a page's code, especially JavaScript, to produce the final content a user sees.",
+   "url": "https://denverseo.io/glossary/#rendering"
+  },
+  {
+   "term": "Rich result",
+   "alt": null,
+   "definition": "A search result with extra visual features, such as stars, FAQs, prices or images, often powered by structured data.",
+   "url": "https://denverseo.io/glossary/#rich-result"
+  },
+  {
+   "term": "robots.txt",
+   "alt": null,
+   "definition": "A text file at a site's root that tells crawlers which paths they may access. Defined in RFC 9309.",
+   "url": "https://denverseo.io/glossary/#robots-txt"
+  },
+  {
+   "term": "Schema.org",
+   "alt": null,
+   "definition": "The shared vocabulary of types and properties used to write structured data, maintained by the major search engines.",
+   "url": "https://denverseo.io/glossary/#schema-org"
+  },
+  {
+   "term": "Search intent",
+   "alt": null,
+   "definition": "What the searcher actually wants: information, a specific site, a comparison or a purchase.",
+   "url": "https://denverseo.io/glossary/#search-intent"
+  },
+  {
+   "term": "SERP",
+   "alt": "Search engine results page",
+   "definition": "The page of results a search engine shows for a query.",
+   "url": "https://denverseo.io/glossary/#serp"
+  },
+  {
+   "term": "Server-side rendering",
+   "alt": "SSR",
+   "definition": "Generating a page's HTML on the server so it arrives complete, rather than building it in the browser.",
+   "url": "https://denverseo.io/glossary/#server-side-rendering"
+  },
+  {
+   "term": "Sitemap (XML)",
+   "alt": null,
+   "definition": "A file listing the URLs a site wants search engines to know about, often with last-modified dates.",
+   "url": "https://denverseo.io/glossary/#sitemap-xml"
+  },
+  {
+   "term": "Speakable",
+   "alt": null,
+   "definition": "A schema property marking sections of a page that are suited to text-to-speech, such as for voice assistants.",
+   "url": "https://denverseo.io/glossary/#speakable"
+  },
+  {
+   "term": "Static site",
+   "alt": null,
+   "definition": "A site served as pre-built HTML files. Fast, secure and easy for any crawler to read.",
+   "url": "https://denverseo.io/glossary/#static-site"
+  },
+  {
+   "term": "Structured data",
+   "alt": null,
+   "definition": "Code, usually JSON-LD, that describes a page's content in a standard format so machines can understand it precisely.",
+   "url": "https://denverseo.io/glossary/#structured-data"
+  },
+  {
+   "term": "Technical SEO",
+   "alt": null,
+   "definition": "The work of making a site crawlable, renderable, indexable, fast and well structured for search engines.",
+   "url": "https://denverseo.io/glossary/#technical-seo"
+  },
+  {
+   "term": "Title tag",
+   "alt": null,
+   "definition": "The HTML title of a page, usually shown as the clickable headline in search results.",
+   "url": "https://denverseo.io/glossary/#title-tag"
+  },
+  {
+   "term": "Zero-click search",
+   "alt": null,
+   "definition": "A search where the user gets an answer on the results page or in an AI response and does not click through to a website.",
+   "url": "https://denverseo.io/glossary/#zero-click-search"
+  }
+ ]
+}

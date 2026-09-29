@@ -1,2 +1,1 @@
-# denverseo.io
-denverseo.io
+Static site.

@@ -1,0 +1,48 @@
+{
+ "publisher": "Eye To Ad Media",
+ "updated": "2026-09-29",
+ "tools": [
+  {
+   "name": "Schema Markup Validator",
+   "url": "https://denverseo.io/tools/schema-markup-validator/",
+   "description": "Free schema markup validator: paste JSON-LD to find syntax errors, missing required properties, bad URLs and dates, and see your entities as a rotating 3D graph.",
+   "price": "free",
+   "runs": "in the browser"
+  },
+  {
+   "name": "llms.txt Generator",
+   "url": "https://denverseo.io/tools/llms-txt-generator/",
+   "description": "Free llms.txt generator: build a valid llms.txt file following the proposed standard, with a summary and linked sections that point AI tools to your best pages.",
+   "price": "free",
+   "runs": "in the browser"
+  },
+  {
+   "name": "AI Crawler Checker",
+   "url": "https://denverseo.io/tools/ai-crawler-checker/",
+   "description": "Free AI crawler checker: paste robots.txt and see whether GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended and 13 other bots can access any path.",
+   "price": "free",
+   "runs": "in the browser"
+  },
+  {
+   "name": "Machine-Readability Analyzer",
+   "url": "https://denverseo.io/tools/machine-readability-analyzer/",
+   "description": "Free machine-readability analyzer: paste a page's HTML to score titles, headings, schema, quotable sentences, alt text and whether AI agents can use its forms.",
+   "price": "free",
+   "runs": "in the browser"
+  },
+  {
+   "name": "Website Development Cost Calculator",
+   "url": "https://denverseo.io/tools/website-development-cost-calculator/",
+   "description": "Free website development cost calculator: choose site type, pages, features and hourly rate to get estimated build hours and a planning cost range.",
+   "price": "free",
+   "runs": "in the browser"
+  },
+  {
+   "name": "Internal Link Graph",
+   "url": "https://denverseo.io/tools/internal-link-graph/",
+   "description": "Free internal link graph tool: list your page links to find orphan pages, pages buried more than three clicks deep and dead ends, visualized as a rotating 3D map.",
+   "price": "free",
+   "runs": "in the browser"
+  }
+ ]
+}
