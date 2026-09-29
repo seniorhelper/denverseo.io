@@ -3,7 +3,7 @@
 if(window.__root)return;window.__root=1;
 var d=document,ss=window.sessionStorage,PH='1-800-481-8638',TEL='tel:18004818638';
 function get(k){try{return ss.getItem('root:'+k)}catch(e){return null}}function set(k,v){try{ss.setItem('root:'+k,v)}catch(e){}}
-var css='.rt-peek{position:fixed;right:0;top:58vh;width:132px;height:150px;z-index:80;cursor:pointer;transform:translateX(62px);transition:transform .5s cubic-bezier(.2,1.4,.4,1);border:0;background:none;padding:0}'+
+var css='.rt-peek{display:none;position:fixed;right:0;top:58vh;width:132px;height:150px;z-index:80;cursor:pointer;transform:translateX(62px);transition:transform .5s cubic-bezier(.2,1.4,.4,1);border:0;background:none;padding:0}'+
 '.rt-peek:hover,.rt-peek:focus-visible{transform:translateX(8px)}.rt-peek .rw{width:132px;height:150px;transform:rotate(-9deg);animation:rtf 4s ease-in-out infinite}'+
 '.rt-peek .hand{position:absolute;left:-2px;top:82px;width:34px;height:38px;transition:opacity .3s}.rt-peek:hover .hand{opacity:0}'+
 '@keyframes rtf{0%,100%{translate:0 0}50%{translate:0 -7px}}'+
@@ -54,10 +54,22 @@ function head(){return '<svg viewBox="0 0 200 230" class="rt-svg" aria-hidden="t
 '<g class="rt-pr" filter="url(#rtGlow)"><path d="M84 116l7 5-7 5" stroke="#34f5a0" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect class="rt-cur" x="95" y="123" width="15" height="3.4" rx="1.7" fill="#34f5a0"/></g>'+
 '<g class="rt-mb" fill="#34f5a0" filter="url(#rtGlow)"><rect x="86" y="114" width="4" height="14" rx="2"/><rect x="94" y="112" width="4" height="18" rx="2"/><rect x="102" y="114" width="4" height="14" rx="2"/><rect x="110" y="116" width="4" height="10" rx="2"/></g>'+
 '<path d="M52 64c14-4 38-4 56-2l-36 60c-10-4-18-12-20-24z" fill="url(#rtGl)"/></g></svg>'}
+function bodySvg(){return '<svg class="rt-bodysvg" viewBox="0 0 200 360" aria-hidden="true">'+
+'<ellipse cx="100" cy="352" rx="46" ry="7" fill="url(#rtSh)"/>'+
+'<ellipse class="rt-flame" cx="86" cy="336" rx="7" ry="14" fill="#38bdf8" opacity=".75" filter="url(#rtGlow)"/><ellipse class="rt-flame" cx="114" cy="336" rx="7" ry="14" fill="#38bdf8" opacity=".75" filter="url(#rtGlow)"/>'+
+'<ellipse class="rt-flame" cx="86" cy="332" rx="3.5" ry="8" fill="#fff6de"/><ellipse class="rt-flame" cx="114" cy="332" rx="3.5" ry="8" fill="#fff6de"/>'+
+'<g filter="url(#rtDrop)">'+
+'<g class="rt-arm rt-arml"><rect x="46" y="218" width="16" height="12" rx="6" fill="url(#rtMet)"/><rect x="40" y="231" width="16" height="12" rx="6" fill="url(#rtMet)"/><rect x="35" y="244" width="16" height="12" rx="6" fill="url(#rtMet)"/><path d="M33 258 l-7 16 M43 259 l0 17 M52 258 l7 15" stroke="#9fb0c6" stroke-width="5.5" stroke-linecap="round"/><circle cx="43" cy="258" r="8" fill="url(#rtPod)"/></g>'+
+'<g class="rt-arm rt-armr"><rect x="138" y="218" width="16" height="12" rx="6" fill="url(#rtMet)"/><rect x="144" y="231" width="16" height="12" rx="6" fill="url(#rtMet)"/><rect x="149" y="244" width="16" height="12" rx="6" fill="url(#rtMet)"/><path d="M148 258 l-7 15 M157 259 l0 17 M167 258 l7 16" stroke="#9fb0c6" stroke-width="5.5" stroke-linecap="round"/><circle cx="157" cy="258" r="8" fill="url(#rtPod)"/></g>'+
+'<rect x="80" y="286" width="14" height="30" rx="6" fill="url(#rtMet)"/><rect x="106" y="286" width="14" height="30" rx="6" fill="url(#rtMet)"/>'+
+'<path d="M72 314 h28 v10 q0 8 -8 8 h-12 q-8 0 -8 -8z" fill="url(#rtShell)"/><path d="M100 314 h28 v10 q0 8 -8 8 h-12 q-8 0 -8 -8z" fill="url(#rtShell)"/>'+
+'<rect x="60" y="204" width="80" height="88" rx="26" fill="url(#rtShell)"/><rect x="60" y="204" width="80" height="88" rx="26" fill="url(#rtSpec)"/><rect x="61.5" y="205.5" width="77" height="85" rx="24.5" fill="none" stroke="url(#rtRim)" stroke-width="2.5"/>'+
+'<rect x="74" y="222" width="52" height="40" rx="10" fill="url(#rtScr)"/><g filter="url(#rtGlow)"><path d="M86 234 l-7 8 7 8 M114 234 l7 8 -7 8 M103 231 l-6 22" stroke="#34f5a0" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>'+
+'<circle cx="100" cy="276" r="5" fill="#ff9a2e" filter="url(#rtGlow)"/></g></svg>'}
 var hand='<svg class="hand" viewBox="0 0 40 44" aria-hidden="true"><g filter="url(#rtDrop)"><rect x="4" y="4" width="32" height="12" rx="6" fill="url(#rtMet)"/><rect x="4" y="17" width="32" height="12" rx="6" fill="url(#rtMet)"/><rect x="6" y="30" width="28" height="11" rx="5.5" fill="url(#rtMet)"/></g></svg>';
 var wrap=d.createElement('div');wrap.className='rt-root';wrap.innerHTML=defs+
 '<button class="rt-peek" type="button" aria-label="Open chat with Root, the site guide"><div class="rw"><div class="rt-tilt">'+head()+'</div></div>'+hand+'</button>'+
-'<div class="rt-bub" role="status"></div>'+
+'<button class="rt-dock" type="button" aria-label="Chat with Root, the site guide"><div class="rt-dk">'+bodySvg()+'<div class="rt-dkh rt-tilt">'+head()+'</div></div><span class="rt-dx" role="button" aria-label="Tuck Root away">&times;</span></button><svg class="rt-bolt" aria-hidden="true"><path d="" fill="none" stroke="#fde047" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" filter="url(#rtGlow)" opacity="0"/></svg>'+'<div class="rt-bub" role="status"></div>'+
 '<section class="rt-chat" aria-label="Chat with Root" aria-hidden="true"><div class="rt-hd"><div class="av rt-tilt">'+head()+'</div><div><b>Root</b><small><span class="rt-dot"></span>Site guide, rule-based assistant</small></div><button class="rt-x" type="button" aria-label="Close chat">&times;</button></div>'+
 '<div class="rt-log" aria-live="polite"></div><div class="rt-qr"></div><form class="rt-ft"><input aria-label="Message Root" placeholder="Ask about your website" maxlength="400"><button aria-label="Send">&#10148;</button></form></section>';
 d.body.appendChild(wrap);
@@ -74,7 +86,7 @@ var OPEN={
  dev:["Building or rebuilding a site? I can walk you through what separates a pretty site from one that gets found.","Most sites are built to be looked at. We build them to be found. What are you working with now?"],
  lab:["Welcome to The Lab. Want to know what a 3D experience could do for your brand?","Fun, right? Now picture your product in here. Want to talk about it?"],
  tools:["Ran a tool? Tell me what surprised you and I'll point you to the next step.","Tools find the gaps. People fix them. Want help with what you found?"],
- money:["Here's the offer in plain words: a site valued at $30K to $50K, from $99 a month, subscribe-to-own. Want to see if you qualify?"],
+ money:["Here's the offer in plain words: a full market-domination website from $99 a month for two to four years, subscribe-to-own, and you can buy it out once it's ranking and earning. Want to see if you qualify?"],
  speed:["Is your site fast on a phone, or just on your office Wi-Fi? Want the real answer?"],
  bot:["You're talking to a sales-trained assistant right now. Want one for your business?"]
 };
@@ -107,7 +119,7 @@ var R={
  cb:function(){return say('Two quick fields and you are done. No spam, no list.').then(cbForm)},
  who:function(){return say("Honest answer: I'm Root, a rule-based site guide. I'm not a person and not a large language model. I know this site, and I know when you should talk to a real strategist.").then(next)},
  bot:function(){return say("You're looking at one. We build sales-trained assistants like me for businesses: they know your services, answer questions at 11pm, and hand hot leads to your phone. Want to talk through what yours would do?").then(next)},
- site50:function(){return say("For businesses we believe in, we build sites valued at $30,000 to $50,000 on our subscribe-to-own plan, from $99 a month. After 24 to 36 months you can buy it at its valuation at that time.").then(function(){return say("Not every business qualifies, and it is not a promise of results. We pick the ones we can really grow. Want to see if yours is a fit?")}).then(next)},
+ site50:function(){return say("For businesses we believe in, we build sites valued at $30,000 to $50,000 on our subscribe-to-own plan, from $99 a month. In years two through four you can buy it out at a fair market value we determine once it is ranking and earning.").then(function(){return say("Not every business qualifies, and it is not a promise of results. We pick the ones we can really grow. Want to see if yours is a fit?")}).then(next)},
  cost:function(){return say('Depends on what you need. We build everything from simple sites to large platforms. The <a href="/tools/website-development-cost-calculator/">cost calculator</a> gives you a planning range. For a real number, a 15-minute call beats guessing. Want that?').then(next)},
  maint:function(){return say("Sites decay quietly: plugins age, forms break, speed slips. Maintenance catches it before customers do. Is something acting up right now, or is this prevention?").then(function(){opts([["Something is broken",function(){return say("Then let's not wait on it. A quick call gets eyes on it today.").then(next)}],["Prevention",function(){return say("Smart. We can map what yours needs monthly vs quarterly. Short call?").then(next)}]])})},
  speed:function(){return say("Speed is money. In a Deloitte study for Google, a 0.1-second mobile improvement lifted retail conversions 8.4%. Want to know where your site stands?").then(next)},
@@ -137,16 +149,34 @@ function opts(a){qr.innerHTML='';a.forEach(function(o){var b=d.createElement('bu
 function cbForm(){qr.innerHTML='';var f=d.createElement('form');f.className='rt-m rt-b rt-cb';f.innerHTML='<input name="name" placeholder="Your name" aria-label="Your name" autocomplete="name" required maxlength="80"><input name="phone" type="tel" placeholder="Best phone number" aria-label="Best phone number" autocomplete="tel" required maxlength="25"><input name="_hp" tabindex="-1" autocomplete="off" style="position:absolute;left:-5000px" aria-hidden="true"><button>Call me</button><small class="fm"></small>';log.appendChild(f);log.scrollTop=1e6;var t0=Date.now();
  f.onsubmit=function(e){e.preventDefault();var fd=new FormData(f),fm=f.querySelector('.fm');if(fd.get('_hp'))return;var ph=String(fd.get('phone')).replace(/\D/g,'');if(!String(fd.get('name')).trim()||ph.length<10){fm.textContent='Add your name and a 10-digit number.';return}if(Date.now()-t0<3000){fm.textContent='One sec, then tap again.';return}
  fd.delete('_hp');fd.append('_subject','Root callback request (DenverSEO.io)');fd.append('page',location.pathname);fm.textContent='Sending...';
- fetch('https://formsubmit.co/ajax/'+'info'+'@'+'eyetoad.com',{method:'POST',headers:{Accept:'application/json'},body:fd}).then(function(){f.remove();say("Done. A strategist will call you shortly. If you would rather not wait: "+PH+".").then(menu)}).catch(function(){fm.textContent='Could not send. Please call '+PH+'.'})}}
+ fetch('https://formsubmit.co/ajax/'+atob('aW5mbw==')+String.fromCharCode(64)+atob('ZXlldG9hZC5jb20='),{method:'POST',headers:{Accept:'application/json'},body:fd}).then(function(){f.remove();say("Done. A strategist will call you shortly. If you would rather not wait: "+PH+".").then(menu)}).catch(function(){fm.textContent='Could not send. Please call '+PH+'.'})}}
 function route(t){t=t.toLowerCase();for(var i=0;i<K.length;i++){if(K[i][0].test(t))return R[K[i][1]]()}return R.fallback()}
 form.addEventListener('submit',function(e){e.preventDefault();var v=inp.value.trim();if(!v)return;me(v);inp.value='';qr.innerHTML='';route(v)});
-function open(){hideBub();chat.classList.add('open');chat.setAttribute('aria-hidden','false');peek.style.display='none';set('state','open');if(!log.children.length){seen++;set('op',seen);say(opener()).then(menu)}else{menu()}setTimeout(function(){if(matchMedia('(min-width:701px)').matches)inp.focus({preventScroll:true})},350)}
-function close(){chat.classList.remove('open');chat.setAttribute('aria-hidden','true');peek.style.display='';set('state','closed');set('bub','1');hideBub();try{peek.focus({preventScroll:true})}catch(e){}}
+function open(){hideBub();chat.classList.add('open');chat.setAttribute('aria-hidden','false');hideP();set('state','open');if(!log.children.length){seen++;set('op',seen);say(opener()).then(menu)}else{menu()}setTimeout(function(){if(matchMedia('(min-width:701px)').matches)inp.focus({preventScroll:true})},350)}
+function close(){chat.classList.remove('open');chat.setAttribute('aria-hidden','true');set('state','closed');showP();set('bub','1');hideBub();}
 function hideBub(){bub.classList.remove('on')}
 peek.addEventListener('click',open);wrap.querySelector('.rt-x').addEventListener('click',close);
 d.addEventListener('keydown',function(e){if(e.key==='Escape'&&chat.classList.contains('open'))close()});
 var saved=get('log');if(saved){log.innerHTML=saved;[].slice.call(log.querySelectorAll('.rt-ty,.rt-cb')).forEach(function(x){x.remove()})}
+
+var LS=window.localStorage,dock=wrap.querySelector('.rt-dock'),boltP=wrap.querySelector('.rt-bolt path'),reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function pget(){try{return LS.getItem('root:presence')||'dock'}catch(e){return 'dock'}}function pset(v){try{LS.setItem('root:presence',v)}catch(e){}}
+function hideP(){peek.style.display='none';dock.style.display='none'}
+function showP(){if(chat.classList.contains('open'))return;if(pget()==='peek'){dock.style.display='none';peek.style.display='block'}else{peek.style.display='none';dock.style.display='block'}}
+function wave(){dock.classList.remove('rt-wave');void dock.offsetWidth;dock.classList.add('rt-wave')}
+dock.addEventListener('click',function(e){if(e.target.closest('.rt-dx')){e.stopPropagation();pset('peek');hideBub();if(!reduce){dock.animate([{transform:'none',opacity:1},{transform:'translate(60px,-40vh) scale(.3)',opacity:0}],{duration:450,easing:'ease-in'}).finished.then(showP)}else showP();return}open()});
+peek.addEventListener('click',function(){pset('dock')},true);
+function flyIn(){var W=innerWidth,H=innerHeight,big=W<640?150:230,box=dock.getBoundingClientRect();dock.style.display='block';var r=dock.getBoundingClientRect(),dw=r.width,dh=r.height,s=big/dw;
+  var sx=W*.12,sy=Math.max(110,H*.16),ex=W-big-24;
+  var A1=dock.animate([{transform:'translate('+(sx-r.left)+'px,'+(sy-r.top)+'px) scale(.05)',opacity:0,filter:'blur(8px) hue-rotate(90deg)'},{offset:.6,opacity:1,filter:'blur(0) hue-rotate(0)'},{transform:'translate('+(sx-r.left)+'px,'+(sy-r.top)+'px) scale('+s+')',opacity:1}],{duration:900,easing:'cubic-bezier(.2,.9,.3,1.2)',fill:'forwards'});
+  A1.finished.then(function(){return dock.animate([{transform:'translate('+(sx-r.left)+'px,'+(sy-r.top)+'px) scale('+s+')'},{transform:'translate('+(ex-r.left)+'px,'+(sy-r.top+30)+'px) scale('+s+') rotate(4deg)',offset:.5},{transform:'translate('+(ex-r.left)+'px,'+(sy-r.top)+'px) scale('+s+')'}],{duration:2200,easing:'ease-in-out',fill:'forwards'}).finished}).then(function(){
+    var tx=ex+big*.5,ty=sy+big*.2,pts=[[tx+40,-10],[tx-15,ty*.35],[tx+25,ty*.55],[tx-10,ty*.8],[tx,ty]];boltP.setAttribute('d','M'+pts.map(function(p){return p[0].toFixed(0)+' '+p[1].toFixed(0)}).join(' L'));var L=boltP.getTotalLength();boltP.style.strokeDasharray=L;
+    return boltP.animate([{strokeDashoffset:L,opacity:1},{strokeDashoffset:0,opacity:1}],{duration:380,easing:'ease-in',fill:'forwards'}).finished}).then(function(){
+    boltP.animate([{opacity:1},{opacity:0}],{duration:600,fill:'forwards'});
+    return dock.animate([{transform:'translate('+(ex-r.left)+'px,'+(sy-r.top)+'px) scale('+s+')'},{transform:'translate('+((ex-r.left)*.4)+'px,'+((sy-r.top)*.4)+'px) scale('+(s*.6)+')',offset:.5},{transform:'none'}],{duration:850,easing:'cubic-bezier(.5,0,.3,1.3)',fill:'forwards'}).finished}).then(function(){dock.getAnimations().forEach(function(a){a.cancel()});try{ss.setItem('root:intro','1')}catch(e){}wave()});}
+var isHome=d.body.hasAttribute('data-intro'),introDone=false;try{introDone=!!ss.getItem('root:intro')}catch(e){}
+function boot(){if(get('state')==='open')return;if(pget()==='peek'){showP();return}if(isHome&&!introDone&&!reduce){hideP();var go=function(){flyIn()};if(window.__compiled)setTimeout(go,200);else d.addEventListener('ds:compiled',function(){setTimeout(go,200)},{once:true});setTimeout(function(){if(dock.style.display!=='block')go()},9000)}else{showP();if(!reduce)dock.animate([{opacity:0,transform:'translateY(20px)'},{opacity:1,transform:'none'}],{duration:500})}}
 window.Root={open:open,close:close};
-if(get('state')==='open'){open()}
+hideP();boot();if(get('state')==='open'){open()}
 else if(!get('bub')&&get('state')!=='closed'){var shown=false;var tryBub=function(){if(shown||window.scrollY<200)return;shown=true;window.removeEventListener('scroll',tryBub);setTimeout(function(){if(chat.classList.contains('open'))return;var t={tech:"Psst. Want to see what Google sees?",ai:"Is AI recommending you yet?",lab:"Like the room? Ask me how.",money:"Want the $50K deal in plain words?"}[page]||"Psst. Want to see what Google sees?";bub.textContent=t;bub.classList.add('on');set('bub','1');setTimeout(hideBub,7000)},1500)};window.addEventListener('scroll',tryBub,{passive:true})}
 })();

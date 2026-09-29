@@ -634,7 +634,7 @@ A focused lead generation site often takes a few weeks. Larger builds with custo
 Yes, if it is done carefully. We map every indexed URL first, keep URLs that rank, redirect the rest properly, and preserve content that performs. No rebuild is risk-free, but careful migration keeps the risk low.
 
 ### Do you offer payment plans?
-For businesses we believe in, we offer a subscribe-to-own website from $99 a month with a buyout option at 24 to 36 months based on valuation. Not every business qualifies.
+For businesses we believe in, we offer a subscribe-to-own website from $99 a month with a buyout option in years two through four based on valuation. Not every business qualifies.
 
 ## Website maintenance services
 URL: https://denverseo.io/website-maintenance/
@@ -759,13 +759,13 @@ We build with WebGL through three.js, with custom shaders, canvas textures and l
 ## The $50K website, subscribe-to-own
 URL: https://denverseo.io/50k-website/
 
-A subscribe-to-own website is a custom-built site you pay for monthly instead of upfront, with the option to buy it outright later. Eye To Ad Media's program starts at $99 a month for builds valued at $30,000 to $50,000, with a buyout option at 24 to 36 months based on the site's valuation at that time.
+A subscribe-to-own website is a custom-built site you pay for monthly instead of upfront, with the option to buy it outright later. Eye To Ad Media's program starts at $99 a month for builds valued at $30,000 to $50,000, with a buyout option in years two through four at a fair market value we determine once the site is ranking and earning.
 
 ### What is a subscribe-to-own website?
-It is a custom website you pay for monthly instead of upfront, with the option to buy it later. Our plans start at $99 a month, with a buyout option at 24 to 36 months based on the site's valuation at that time.
+It is a custom website you pay for monthly instead of upfront, with the option to buy it later. Our plans start at $99 a month, with a buyout option in years two through four at a fair market value we determine once the site is ranking and earning.
 
 ### Is this the same as renting a website?
-No. You pay monthly, but the goal is ownership. You can buy the site at its valuation after 24 to 36 months instead of renting forever.
+No. You pay monthly, but the goal is ownership. You can buy the site at its valuation after two to four years instead of renting forever.
 
 ### Who qualifies for the $50K website program?
 Businesses we believe a great website can genuinely grow, typically established operators in markets with real search demand. We review each business before offering the program, and not everyone qualifies.

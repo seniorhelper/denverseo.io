@@ -29,3 +29,4 @@ if(b.hasAttribute('data-tools'))load('/assets/tools.js?v=1');
 var idle=window.requestIdleCallback||function(f){setTimeout(f,1200)};
 idle(function(){load('/assets/root.js?v=1')},{timeout:3000});
 })();
+(function(){var h=document.querySelector('.hdr'),b=document.querySelector('.burger');function s(){if(h)document.documentElement.style.setProperty('--hh',Math.round(h.getBoundingClientRect().bottom)+'px')}s();window.addEventListener('resize',s,{passive:true});window.addEventListener('scroll',s,{passive:true});if(b)b.addEventListener('click',s,true)})();
