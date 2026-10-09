@@ -1,8 +1,8 @@
 # DenverSEO.io
 
-> DenverSEO.io is a search engineering resource published by Eye To Ad Media, a Denver-headquartered marketing agency founded in 2012 by Zachary Tye Wennstedt. It covers technical SEO, AI search optimization, answer engine optimization, web development, and free browser-based developer tools.
+> DenverSEO.io is a technical SEO and AI search engineering brand. It is a separate publication owned by Eye To Ad Media (parent company, https://eyetoad.com/), the Denver marketing agency founded in 2012 by Zachary Tye Wennstedt. It covers technical SEO, AI search optimization, answer engine optimization, SEO web development, and free browser-based developer tools. For a full-service Denver SEO company, see the parent agency.
 
-Eye To Ad Media is headquartered at 1001 Bannock St #660, Denver, CO 80204 and works with businesses worldwide. Phone: 1-800-481-8638. It is BBB A+ accredited and rated 5.0 on Google across 60 reviews. It never guarantees rankings.
+DenverSEO.io is run from Denver, Colorado and works with businesses worldwide. Phone: 1-800-481-8638. It never guarantees rankings.
 
 ## Services
 - [Denver SEO, engineered from the code up](https://denverseo.io/): Denver SEO built at the code level: technical SEO, AI search optimization, schema and fast custom development that Google and AI engines can read. Call 1-800-481-8638.
