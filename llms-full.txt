@@ -31,63 +31,45 @@ We offer transparent tiered packages starting with foundational local SEO and sc
 ### What makes DenverSEO.io different from other Denver SEO companies?
 We're built specifically for the AI search era. While most Denver SEO agencies are still optimizing only for Google's traditional results, we optimize for Google, ChatGPT, Perplexity, Claude, Gemini, Grok, and Manus. Every client gets their own dedicated marketing expert. We measure success in leads and revenue — not vanity rankings.
 
-## Technical SEO services for sites Google can actually read
+## Technical SEO services for sites Google can actually read.
 URL: https://denverseo.io/denver-seo-company/
 
 Technical SEO services fix the parts of a website that decide whether search engines can crawl, render, index and trust it: site architecture, robots rules, canonicals, JavaScript rendering, Core Web Vitals, structured data and internal links.
 
-### What makes DenverSEO.io the top SEO company in Denver?
-DenverSEO.io is a Denver SEO team built specifically for the AI search era. We optimize for Google, ChatGPT, Perplexity, Claude, Gemini, Grok, and Manus simultaneously. Every client gets a dedicated marketing expert — not a rotating account team. We measure success in leads and revenue, not vanity rankings.
+### What are technical SEO services?
+Technical SEO services fix the parts of a website that decide whether search engines can crawl, render, index and understand it: site architecture, robots rules, canonicals, JavaScript rendering, Core Web Vitals, structured data and internal links.
 
-### How is a Denver SEO agency different from a national SEO company?
-A Denver SEO agency understands the local competitive landscape, the specific search behavior of Colorado consumers, and the neighborhoods, industries, and local signals that matter for Denver rankings. National companies apply generic strategies. We apply Denver-specific intelligence backed by AI search optimization.
+### How is technical SEO different from regular SEO?
+Regular SEO focuses on keywords, content, links and listings. Technical SEO focuses on the code and infrastructure underneath. If good pages are not being indexed or are slow, technical SEO is usually the bottleneck.
 
-### What should I look for when hiring an SEO company in Denver?
-Look for transparency, realistic timelines, real case studies, dedicated account management, and a clear strategy for AI search — not just Google. Avoid companies that guarantee #1 rankings or use vague reporting. A top SEO company in Denver will show you exactly what they're doing and why, with metrics that connect to actual business growth.
+### Do you make the fixes or just report them?
+Either. We can ship the changes ourselves on hand-coded, WordPress and Shopify sites, or write precise specs for your developers. Every fix is verified afterward.
 
-### How long before I see results from a Denver SEO company?
-Most Denver businesses see measurable movement in Google within 90 to 180 days. AI search citations often appear within 30 to 60 days of proper optimization. We set realistic expectations from day one — and we report on real progress every 30 days.
+### How long before technical fixes show results?
+Some fixes, such as unblocking pages or repairing redirects, can show up as soon as Google recrawls the affected pages. Others, like speed improvements, build over weeks. We do not guarantee rankings; we verify that each fix took effect.
 
-### Do Denver SEO agencies also handle AI search optimization?
-Most don't. The majority of Denver SEO agencies are still focused exclusively on Google's traditional results. DenverSEO.io was built from the ground up to optimize for both Google and all major AI search engines — ChatGPT, Perplexity, Claude, Gemini, Grok, and Manus.
+### Do you work outside Denver?
+Yes. We are headquartered in Denver and work with businesses around the world. Technical SEO is done remotely through your code, Search Console and analytics.
 
-### What industries does your Denver SEO agency specialize in?
-We serve Denver businesses across healthcare, legal, home services, real estate, restaurants, automotive, fitness, e-commerce, SaaS, construction, and professional services. Every industry has different keyword intent patterns and AI citation signals — we customize every strategy.
-
-### How much does it cost to hire a top SEO company in Denver?
-Every client gets a dedicated expert and transparent reporting. We don't do lock-in contracts — we earn your business every month by producing results.
-
-### What is the difference between an SEO company and an SEO agency?
-In practice, both terms refer to professional organizations that provide SEO services. The distinction matters less than whether they deliver results. DenverSEO.io operates as both — a full-service SEO company and a strategic agency that builds long-term organic growth systems for Denver businesses.
-
-## An SEO web developer writes code search engines trust
+## An SEO web developer writes code search engines trust.
 URL: https://denverseo.io/denver-seo-services/
 
 SEO web development is building a website with search requirements coded in from the start: semantic HTML, one clear H1 per page, structured data, fast rendering, crawlable navigation, clean URLs and conversion paths, instead of retrofitting SEO after launch.
 
-### What Denver SEO services does DenverSEO.io offer?
-DenverSEO.io offers a full stack of Denver SEO services including Google organic SEO, AI search optimization for ChatGPT, Perplexity, Claude, Gemini, Grok and Manus, Google AI Overviews optimization, GEO, local SEO, technical SEO audits, content strategy, authority link building, and conversion rate optimization. Every client gets a dedicated marketing expert.
+### What is SEO web development?
+SEO web development is building a website with search requirements coded in from the start: semantic HTML, content in the first server response, structured data, speed budgets, crawlable navigation, clean URLs and conversion paths.
 
-### What is included in your Denver SEO services?
-Our Denver SEO services include keyword research, on-page optimization, technical SEO fixes, content creation, authority link building, schema markup across 20+ structured data types, AI search citation optimization, Google Business Profile management, citation building, review strategy, Core Web Vitals improvement, and monthly reporting on leads and revenue.
+### Why not just add SEO after the site launches?
+You can, but it usually costs more. Speed problems, JavaScript-only content and messy URL structures are expensive to fix after launch. Building them right the first time avoids the rework.
 
-### How are your Denver SEO services different from other agencies?
-Most Denver SEO agencies only optimize for Google traditional results. Our services cover Google AND all six major AI search engines including ChatGPT, Perplexity, Claude, Gemini, Grok, and Manus. Every client gets one dedicated expert personally accountable for results. We report on actual leads and revenue, not vanity rankings.
+### Do you only build hand-coded sites?
+No. We prefer hand-coded static sites for speed and control, and we also work on WordPress, Shopify and JavaScript framework sites.
 
-### Do your SEO services in Denver include AI search optimization?
-Yes. AI search optimization is a core component of every Denver SEO service package we offer. We optimize your content, entity signals, and structured data specifically to be cited by ChatGPT, Perplexity, Claude, Google Gemini, Grok, and Manus AI when users ask questions relevant to your Denver business.
+### Will a redesign hurt my rankings?
+It can if redirects, content and internal links are not planned. We map every old URL, crawl the new site before launch and monitor indexing afterward to protect what you have earned.
 
-### What is GEO and is it part of your Denver SEO services?
-GEO stands for Generative Engine Optimization. It is the practice of building entity authority and structured content so that AI language models recognize your Denver business as the definitive authoritative source in your industry and cite you accordingly. GEO is included in our AI-tier Denver SEO services.
-
-### How long do Denver SEO services take to show results?
-Most Denver businesses see measurable Google ranking movement within 90 to 180 days. AI search citations often appear within 30 to 60 days of proper optimization. We set realistic timelines from day one and show documented progress every 30 days.
-
-### Do your SEO services include technical SEO for Denver businesses?
-Yes. Technical SEO is the foundation of every campaign. We audit Core Web Vitals, crawlability, site architecture, page speed, mobile optimization, canonical tags, structured data, and indexing issues. Technical problems prevent even great content from ranking so we fix them first.
-
-### What is agentic SEO and is it part of your Denver SEO services?
-Agentic SEO optimizes your site to be discovered by autonomous AI agents like Manus AI, ChatGPT with browsing, and Perplexity that independently browse the web and compile recommendations. We structure your schema, content, and entity signals so these agents surface your Denver business even when no human is directly searching.
+### How much does an SEO-built website cost?
+It depends on the size and features of the site. Custom websites are available on a subscribe-to-own plan from $99 a month for two to four years, and larger custom builds are quoted after a free call.
 
 ## An SEO technical audit that finds what dashboards miss
 URL: https://denverseo.io/denver-seo-audit/
@@ -118,54 +100,45 @@ After your audit, you get a strategy call with a dedicated expert who walks thro
 ### How is a DenverSEO.io audit different from automated SEO tools?
 Automated tools like SEMrush or Ahrefs catch technical issues but miss the full picture. They can't assess AI search visibility, content authority, conversion gaps, or competitive landscape in your specific Denver market. Our audit combines data with expert human analysis — giving you insights no tool can generate alone.
 
-## What an SEO audit should cost, and what you should get for it
+## What an SEO audit should cost, and what you should get for it.
 URL: https://denverseo.io/denver-seo-pricing/
 
 SEO audit cost depends on scope: a surface checklist review is quick and inexpensive, while a full technical audit of rendering, indexing, schema, speed and site architecture takes days of expert time. Site size, platform complexity and whether fixes are included move the price most.
 
-### How much does SEO cost in Denver?
-Growth campaigns range from $1,500 to $2,500. Every campaign is custom-tailored to your goals, competition level, industry, and how aggressive you want to be.
+### How much does an SEO audit cost?
+It depends on scope. An automated report costs little or nothing, a checklist review takes hours of expert time, and a full technical audit of a larger or JavaScript-heavy site takes days. Site size, platform, depth and whether fixes are included move the price most.
 
-### What determines Denver SEO pricing?
-Denver SEO pricing is determined by five main factors: keyword competition in your industry, the size and aggressiveness of your goals, the current state of your website, the geographic scope (local Denver vs. regional vs. national), and the depth of AI search optimization required. Highly competitive industries like legal, healthcare, and home services typically require larger investments to win.
+### What should an SEO audit include?
+A ranked fix list, the cause of each issue, evidence such as example URLs and Search Console data, fix specifications your developers can use, and a way to verify each fix after it ships.
 
-### Why is there no flat-rate SEO pricing?
-Because no two Denver businesses are the same. A neighborhood salon competing for local searches has completely different needs than a SaaS company targeting national keywords. Flat-rate SEO leads to under-investment for ambitious businesses and over-investment for simple ones. We custom-build every Denver SEO campaign so you pay only for what actually drives your results.
+### Is a free SEO audit worth it?
+A free review is worth it when it names specific problems on your own site. If the findings would apply to any website, it is a sales brochure rather than an audit.
 
-### Are SEO packages Denver businesses use guaranteed to work?
-No ethical SEO company can guarantee specific rankings. However, we commit to transparent strategy, honest reporting, consistent execution, and measurable monthly progress. We've helped dozens of Denver businesses move from invisible to dominant in their markets. We will always tell you the truth about your timeline and what to realistically expect.
+### Do you include fixes in the audit price?
+You can choose. We quote the audit alone, the fixes alone, or both together, as fixed prices agreed before work starts.
 
-### Is cheap SEO worth it in Denver?
-Cheap SEO is almost always more expensive in the long run. These tactics either produce nothing or actively harm your domain. We've spent thousands of hours fixing damage from cheap SEO. Investing in real, white-hat Denver SEO from the start saves money over time.
+### How long does a technical SEO audit take?
+A checklist review takes hours. A full technical audit typically takes several days, longer for very large or JavaScript-heavy sites. We give you a delivery date with the quote.
 
-### What is included in DenverSEO.io pricing?
-Every Denver SEO package includes a dedicated marketing expert, monthly transparent reporting, technical SEO maintenance, on-page optimization, AI search optimization, content creation, link authority building, Google Business Profile management, and conversion optimization. Larger packages add national keyword targeting, advanced GEO work, multiple location pages, and custom software builds.
-
-### How quickly will I see ROI from Denver SEO?
-Most Denver businesses begin seeing measurable lead increases within 90 to 180 days. AI search citations can appear within 30 to 60 days. Full ROI typically arrives between months 4 and 8, when compounding authority makes organic traffic the highest-ROI channel in your marketing stack.
-
-### Do you offer one-time SEO services in Denver?
-Yes. We offer one-time SEO audits, website builds, technical SEO fixes, and content strategy projects. However, sustained ranking improvements require ongoing work because Google and AI search engines update constantly. Most Denver businesses see better long-term results with monthly retainers than with one-time projects.
-
-## Local pack SEO, from the engineering side
+## Local pack SEO, from the engineering side.
 URL: https://denverseo.io/local-seo-denver/
 
 Local pack SEO is the work of earning one of the three map listings Google shows for local searches. It depends on relevance, distance and prominence, which in practice means a complete Google Business Profile, consistent business data across the web, LocalBusiness schema, reviews and locally relevant pages.
 
-### What is local SEO and why does my Denver business need it?
-Local SEO optimizes your presence to appear in the Google Map Pack and location-based searches. It drives high-intent traffic from customers ready to buy right now — consistently the highest-ROI channel for local businesses.
+### What is local pack SEO?
+Local pack SEO is the work of earning one of the three map listings Google shows for local searches. It depends on relevance, distance and prominence: a complete Business Profile, consistent business data, LocalBusiness schema, reviews and useful local pages.
 
-### What is the Google Map Pack?
-The Map Pack is the box of three local listings at the top of Google results. Ranking requires a fully optimized GBP, consistent citations, positive reviews, and strong on-page local signals.
+### Does schema markup help local rankings?
+Structured data does not rank a business by itself, but it removes ambiguity about who you are, where you are and what you do. It must match your visible page and Business Profile exactly.
 
-### How long does local SEO take in Denver?
-Most Denver businesses see measurable Map Pack movement in 60-90 days. GBP optimizations often show results in 30 days. Full domination for competitive terms takes 3-6 months.
+### How many location pages should I have?
+One for each real location or service area where you can say something genuinely useful. Thin pages that only swap the city name can be treated as doorway pages.
 
-### What is GBP optimization?
-Google Business Profile optimization means fully completing and enhancing your free Google listing — correct categories, keyword-rich description, quality photos, accurate hours, services, review responses, and regular posts. It is the single most important factor for Google Maps ranking in Denver.
+### Why do inconsistent business details matter?
+When your name, address or phone differ across the web, search engines have less confidence that the listings describe the same business. Fixing the source data removes that doubt.
 
-### How do AI search engines like ChatGPT affect local SEO?
-AI tools like ChatGPT, Perplexity, and Google AI Overviews pull from local business data — GBP signals, reviews, and citation authority — when answering queries like 'best HVAC company in Denver.' Strong local SEO and strong AI search optimization share the same foundation.
+### Can you track calls from Google Maps?
+Yes. Tagged website links on your Business Profile and call tracking let you see which calls, direction requests and form fills come from local search.
 
 ## AI search optimization: be the answer every engine agrees on
 URL: https://denverseo.io/ai-search-optimization-denver/
@@ -579,7 +552,7 @@ Eye To Ad Media was founded in 2012 by Zach Wennstedt, a Denver-based conversion
 Eye To Ad Media was founded in 2012 in Denver, Colorado. Specifically, that means the agency has 14+ years of in-market experience as of 2026. Above all, the operating principles (customer success first, conversion over traffic, senior strategist continuity) have been consistent since founding.
 
 ### What does Eye To Ad Media do?
-Eye To Ad Media is a conversion-focused tech marketing agency. Specifically, we operate across SEO, AI search optimization across nine engines, conversion engineering, full-funnel growth strategy, and creative campaigns. Furthermore, DenverSEO.io is our dedicated AI search and SEO practice. For paired full-website conversion engineering, our sister agency Search Converts handles web design.
+Eye To Ad Media is a conversion-focused tech marketing agency. Specifically, we operate across SEO, AI search optimization across nine engines, conversion engineering, full-funnel growth strategy, and creative campaigns. Furthermore, DenverSEO.io is our dedicated AI search and SEO practice. For paired full-website conversion engineering, Search Converts handles web design.
 
 ### What is Eye To Ad Media's approach to SEO?
 Eye To Ad Media's approach centers on three operating principles: customer success first (every metric ties to business outcomes), conversion over traffic (every campaign integrates conversion engineering), and senior strategist continuity (the senior who closes the deal stays involved throughout). Specifically, this approach addresses the failure modes that cause most SEO engagements to fail. Above all, we apply real engineering discipline rather than activity theater.
