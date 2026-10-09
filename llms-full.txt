@@ -988,6 +988,29 @@ A form that AI agents and assistive technologies can understand and complete, wi
 ### Do CAPTCHAs block AI agents?
 Many CAPTCHAs are designed to block automated software, including legitimate assistants. Honeypots, timing checks and server-side verification can stop spam with less friction.
 
+## Types of AI agents, with examples, and how they actually work
+URL: https://denverseo.io/types-of-ai-agents/
+
+There are five classic types of AI agents: simple reflex agents that follow if-then rules, model-based reflex agents that track state, goal-based agents that plan toward an outcome, utility-based agents that weigh tradeoffs, and learning agents that improve from feedback. Modern LLM agents combine these ideas with tools, memory and planning.
+
+### What are the main types of AI agents?
+The five classic types are simple reflex, model-based reflex, goal-based, utility-based and learning agents. Hierarchical and multi-agent systems describe how several agents are organized together rather than how one agent decides.
+
+### What is an example of an AI agent?
+An inbox triage agent that reads incoming email, sorts it into quotes, invoices and complaints, drafts replies and waits for a person to approve them is a practical business example. A thermostat is the classic simple reflex example.
+
+### How do AI agents work?
+They run a loop: perceive inputs, decide on an action, act through tools such as APIs, then observe the result and decide again. Modern agents use a language model for the decide step, with code that validates and executes every action.
+
+### What is multi-agent AI?
+Multi-agent AI splits a task across several specialized agents, for example a researcher, a writer and a reviewer, coordinated by an orchestrator. It helps when one agent's job becomes too broad to test reliably.
+
+### Are AI agents safe to use in a small business?
+They can be, when they use least-privilege access, log every action, stay inside step and spend limits, and require human approval for anything involving money, customers or changes that cannot be undone.
+
+### Will an AI agent replace my staff?
+That is not how we build them. A well-scoped agent takes over repetitive steps like sorting, copying and drafting, so your people spend their time on judgment, relationships and the work they are good at.
+
 ## Engineering notes
 URL: https://denverseo.io/blog/
 
