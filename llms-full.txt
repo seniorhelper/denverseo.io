@@ -32,7 +32,7 @@ We offer transparent tiered packages starting with foundational local SEO and sc
 We're built specifically for the AI search era. While most Denver SEO agencies are still optimizing only for Google's traditional results, we optimize for Google, ChatGPT, Perplexity, Claude, Gemini, Grok, and Manus. Every client gets their own dedicated marketing expert. We measure success in leads and revenue — not vanity rankings.
 
 ## Technical SEO services for sites Google can actually read.
-URL: https://denverseo.io/denver-seo-company/
+URL: https://denverseo.io/technical-seo-services/
 
 Technical SEO services fix the parts of a website that decide whether search engines can crawl, render, index and trust it: site architecture, robots rules, canonicals, JavaScript rendering, Core Web Vitals, structured data and internal links.
 
@@ -52,7 +52,7 @@ Some fixes, such as unblocking pages or repairing redirects, can show up as soon
 Yes. We are headquartered in Denver and work with businesses around the world. Technical SEO is done remotely through your code, Search Console and analytics.
 
 ## An SEO web developer writes code search engines trust.
-URL: https://denverseo.io/denver-seo-services/
+URL: https://denverseo.io/seo-web-development/
 
 SEO web development is building a website with search requirements coded in from the start: semantic HTML, one clear H1 per page, structured data, fast rendering, crawlable navigation, clean URLs and conversion paths, instead of retrofitting SEO after launch.
 
@@ -101,7 +101,7 @@ After your audit, you get a strategy call with a dedicated expert who walks thro
 Automated tools like SEMrush or Ahrefs catch technical issues but miss the full picture. They can't assess AI search visibility, content authority, conversion gaps, or competitive landscape in your specific Denver market. Our audit combines data with expert human analysis — giving you insights no tool can generate alone.
 
 ## What an SEO audit should cost, and what you should get for it.
-URL: https://denverseo.io/denver-seo-pricing/
+URL: https://denverseo.io/seo-audit-cost/
 
 SEO audit cost depends on scope: a surface checklist review is quick and inexpensive, while a full technical audit of rendering, indexing, schema, speed and site architecture takes days of expert time. Site size, platform complexity and whether fixes are included move the price most.
 
@@ -121,7 +121,7 @@ You can choose. We quote the audit alone, the fixes alone, or both together, as 
 A checklist review takes hours. A full technical audit typically takes several days, longer for very large or JavaScript-heavy sites. We give you a delivery date with the quote.
 
 ## Local pack SEO, from the engineering side.
-URL: https://denverseo.io/local-seo-denver/
+URL: https://denverseo.io/local-pack-seo/
 
 Local pack SEO is the work of earning one of the three map listings Google shows for local searches. It depends on relevance, distance and prominence, which in practice means a complete Google Business Profile, consistent business data across the web, LocalBusiness schema, reviews and locally relevant pages.
 

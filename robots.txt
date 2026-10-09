@@ -4,17 +4,4 @@
 User-agent: *
 Allow: /
 
-# SEO data-mining crawlers (not search or AI answer engines)
-User-agent: AhrefsBot
-Disallow: /
-
-User-agent: SemrushBot
-Disallow: /
-
-User-agent: MJ12bot
-Disallow: /
-
-User-agent: DotBot
-Disallow: /
-
 Sitemap: https://denverseo.io/sitemap.xml
