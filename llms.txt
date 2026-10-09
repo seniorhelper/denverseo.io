@@ -6,8 +6,8 @@ DenverSEO.io is run from Denver, Colorado and works with businesses worldwide. P
 
 ## Services
 - [Denver SEO, engineered from the code up](https://denverseo.io/): Denver SEO built at the code level: technical SEO, AI search optimization, schema and fast custom development that Google and AI engines can read. Call 1-800-481-8638.
-- [Technical SEO services for sites Google can actually read](https://denverseo.io/denver-seo-company/): Technical SEO services that fix crawling, rendering, indexing, speed and schema at the code level. Engineered in Denver for businesses worldwide. Call 1-800-481-8638.
-- [An SEO web developer writes code search engines trust](https://denverseo.io/denver-seo-services/): SEO web development: developers who code sites for search from the first commit. Schema, speed, clean HTML and conversion paths built in. Call 1-800-481-8638.
+- [Technical SEO services for sites Google can actually read](https://denverseo.io/technical-seo-services/): Technical SEO services that fix crawling, rendering, indexing, speed and schema at the code level. Engineered in Denver for businesses worldwide. Call 1-800-481-8638.
+- [An SEO web developer writes code search engines trust](https://denverseo.io/seo-web-development/): SEO web development: developers who code sites for search from the first commit. Schema, speed, clean HTML and conversion paths built in. Call 1-800-481-8638.
 - [An SEO technical audit that finds what dashboards miss](https://denverseo.io/denver-seo-audit/): A technical SEO audit that inspects crawling, rendering, indexing, speed, schema and AI readability, with prioritized fixes. Engineered in Denver. Call 1-800-481-8638.
 - [A web development company that codes for search](https://denverseo.io/web-development-company/): A web development company that hand-codes fast, secure sites with SEO, schema and conversion built in. Headquartered in Denver, building worldwide.
 - [Web development in Denver](https://denverseo.io/web-development-denver/): Web development in Denver: custom-coded, fast, SEO-ready websites from a Denver-headquartered team. Lead gen sites, tools, 3D and chatbots. Call 1-800-481-8638.
@@ -20,7 +20,7 @@ DenverSEO.io is run from Denver, Colorado and works with businesses worldwide. P
 - [A sales chatbot for your website](https://denverseo.io/sales-chatbot/): A sales chatbot for your website, trained on your services and a real sales playbook. Answers at night, qualifies honestly and hands hot leads to your phone.
 - [3D website design and development](https://denverseo.io/3d-websites/): 3D website design and development with WebGL and three.js: interactive products, walk-in rooms and immersive brand experiences that still load fast. Step inside The Lab.
 - [The $50K website, subscribe-to-own](https://denverseo.io/50k-website/): A website valued at $30,000 to $50,000, from $99 a month on a subscribe-to-own plan, with a buyout option in years two through four. For businesses we believe in.
-- [Local pack SEO, from the engineering side](https://denverseo.io/local-seo-denver/): Local pack SEO explained at the technical level: Google Business Profile data, local schema, citations, proximity and reviews, and how to engineer each signal.
+- [Local pack SEO, from the engineering side](https://denverseo.io/local-pack-seo/): Local pack SEO explained at the technical level: Google Business Profile data, local schema, citations, proximity and reviews, and how to engineer each signal.
 
 ## Free tools
 - [Free SEO and web developer tools](https://denverseo.io/tools/): Free developer-grade SEO tools: schema validator with a 3D graph, AI crawler checker, llms.txt generator, readability analyzer, cost calculator and link graph.
