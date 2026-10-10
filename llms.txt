@@ -34,6 +34,7 @@ DenverSEO.io is run from Denver, Colorado and works with businesses worldwide. P
 ## Learn
 - [How search engines work](https://denverseo.io/how-search-engines-work/): How search engines work, step by step: crawling, rendering, indexing, ranking and AI answers. An interactive lesson that also explains how SEO works at each step.
 - [SEO and AI search glossary](https://denverseo.io/glossary/): SEO glossary and AI glossary in plain English: 60 terms from AEO and GEO to Core Web Vitals, llms.txt, RAG, schema and technical SEO, each defined in a sentence or two.
+- [Types of AI agents, with examples](https://denverseo.io/types-of-ai-agents/): The five classic types of AI agents with business examples, how LLM agents use tools, memory, planning and guardrails, multi-agent systems, evaluation metrics and failure modes.
 - [Research and sources](https://denverseo.io/research/): The statistics and primary sources behind our work: Deloitte on site speed, Pew on ChatGPT adoption, Google on Core Web Vitals and AI features, RFC 9309 and more.
 - [What AI crawlers actually read on your page](https://denverseo.io/blog/what-ai-crawlers-read/): AI crawlers do not see your page the way you do. Here is what they fetch, what they skip, and the five changes that make your content usable to answer engines.
 - [Schema markup mistakes we fix most often](https://denverseo.io/blog/schema-markup-mistakes/): The structured data errors that quietly waste your schema: invalid JSON, markup that does not match the page, disconnected entities, self-serving reviews and more.
