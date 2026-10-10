@@ -25,7 +25,7 @@ $$('.scoper').forEach(function(sc){
     if(!data.name||!(data.phone||data.email)){m.className='fmsg err';m.textContent='Add your name and a phone or email.';return}
     Object.keys(ans).forEach(function(k){data[k]=ans[k]});data.topic=sc.getAttribute('data-topic');
     var btn=$('button[type=submit]',f);btn.disabled=true;m.className='fmsg';m.textContent='Sending...';
-    send(sc,data,'DenverSEO.io project scope: '+(ans.project||'')).then(function(r){btn.disabled=false;if(r==='fail'){m.className='fmsg err';m.textContent='That did not go through. Please call 1-800-481-8638.';return}go(steps.length-1)})});
+    send(sc,data,'DenverSEO.io project scope: '+(ans.project||'')).then(function(r){btn.disabled=false;if(r!=='ok'){m.className='fmsg err';m.textContent='That did not go through. Please call 1-800-481-8638.';return}go(steps.length-1)})});
   go(0);
 });
 
