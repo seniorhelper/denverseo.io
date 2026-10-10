@@ -1011,6 +1011,34 @@ They can be, when they use least-privilege access, log every action, stay inside
 ### Will an AI agent replace my staff?
 That is not how we build them. A well-scoped agent takes over repetitive steps like sorting, copying and drafting, so your people spend their time on judgment, relationships and the work they are good at.
 
+## Log file analysis for SEO: what your server knows that Search Console does not
+URL: https://denverseo.io/blog/log-file-analysis-seo/
+
+Log file analysis for SEO means reading your web server's access logs to see which URLs search engine and AI crawlers request, how often, and what status codes they receive. It shows wasted crawling on parameters and redirects, errors that only bots hit, and important pages that crawlers rarely visit. Always verify Googlebot by reverse DNS, because user agents are easy to fake.
+
+### What is log file analysis in SEO?
+Reading your server's raw access logs to see which URLs search engine and AI crawlers request, how often, and what status codes they receive, so you can fix crawl waste and errors.
+
+### How do I know a request is really from Googlebot?
+Run a reverse DNS lookup on the IP and confirm it ends in googlebot.com, google.com or googleusercontent.com, then run a forward lookup and confirm it returns the same IP. For bulk checks, match IPs against Google's published crawler IP ranges.
+
+### Why does my analytics not show Googlebot?
+Analytics tools record visits by running JavaScript in a browser. Crawlers generally do not run that script, so they only appear in server logs.
+
+## Crawled, currently not indexed: what it means and how to fix it
+URL: https://denverseo.io/blog/crawled-currently-not-indexed/
+
+Crawled, currently not indexed is a Search Console status meaning Google fetched the page but decided not to add it to the index for now. Google says it may or may not be indexed later and there is no need to resubmit it. The usual causes are duplicate or near-duplicate content, thin pages, weak internal linking and rendering problems. Fix the page and its signals, then let Google recrawl it.
+
+### What does crawled, currently not indexed mean?
+Google fetched the page but decided not to add it to its index for now. Google says it may or may not be indexed later and that you do not need to resubmit the URL.
+
+### What is the difference between crawled and discovered, currently not indexed?
+Discovered means Google knows about the URL but has not crawled it yet. Crawled means Google fetched the page and chose not to index it, which usually points to the page's content or signals.
+
+### Should I click Request Indexing?
+Once, after you have meaningfully improved the page, is reasonable. Repeated requests for an unchanged page do not help.
+
 ## Engineering notes
 URL: https://denverseo.io/blog/
 
