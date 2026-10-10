@@ -23,7 +23,7 @@ $$('form[data-lead]').forEach(function(f){var t0=Date.now();f.addEventListener('
  if(!ok){msg.textContent='That message is a little long. Trim it and try again.';return}
  fd.delete('_hp');fd.append('_subject','DenverSEO.io lead: '+(fd.get('topic')||'website'));fd.append('_template','table');fd.append('page',location.pathname);
  var to='in'+'fo'+'@'+'eyetoad'+'.com';msg.textContent='Sending...';
- fetch('https://formsubmit.co/ajax/'+to,{method:'POST',headers:{'Accept':'application/json'},body:fd}).then(function(r){return r.json()}).then(function(){f.reset();msg.textContent='Got it. A strategist will reach out shortly. Faster? Call 1-800-481-8638.'}).catch(function(){msg.textContent='Could not send. Please call 1-800-481-8638.'})})});
+ fetch('https://formsubmit.co/ajax/'+to,{method:'POST',headers:{'Accept':'application/json'},body:fd}).then(function(r){return r.json().catch(function(){return {}}).then(function(j){if(!r.ok||String(j&&j.success)!=='true')throw 0})}).then(function(){f.reset();msg.textContent='Got it. A strategist will reach out shortly. Faster? Call 1-800-481-8638.'}).catch(function(){msg.textContent='Could not send. Please call 1-800-481-8638.'})})});
 function load(src){var s=d.createElement('script');s.src=src;s.defer=true;d.body.appendChild(s)}
 if(b.hasAttribute('data-tools'))load('/assets/tools.js?v=1');
 var idle=window.requestIdleCallback||function(f){setTimeout(f,1200)};
