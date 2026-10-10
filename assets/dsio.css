@@ -375,3 +375,6 @@ body.compiled .hero .stage{animation:assemble 1s .15s cubic-bezier(.2,.9,.3,1) b
 @media (max-width:1440px) and (min-width:1101px){.hdr .btn.top{display:none}}
 @media (max-width:420px){.logo b{font-size:19px}.logo svg{width:28px;height:28px}.logo{gap:6px}.hphone.top{font-size:13.5px;padding:7px 9px}}
 .embeds>*{min-width:0}.embed{max-width:100%}
+
+/* phones narrower than 400px: header call button becomes a 44px icon so the menu button stays on screen */
+@media (max-width:400px){.hphone.top{font-size:0!important;padding:10px!important;margin-left:auto!important;width:44px;height:44px;justify-content:center;flex:none}.hphone.top svg{width:20px;height:20px}}
