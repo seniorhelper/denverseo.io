@@ -11,7 +11,12 @@ $$('.nav a').forEach(function(a){a.addEventListener('click',function(){b.classLi
 $$('.draw').forEach(function(s){$$('path,line,polyline,circle,rect',s).forEach(function(p){try{var l=Math.ceil(p.getTotalLength?p.getTotalLength():600);p.style.setProperty('--len',l)}catch(e){}})});
 var els=$$('.rv,.draw,[data-count]');
 function count(el){var t=parseFloat(el.getAttribute('data-count'))||0,dec=(el.getAttribute('data-count').split('.')[1]||'').length,s=performance.now(),pre=el.getAttribute('data-pre')||'',suf=el.getAttribute('data-suf')||'';(function f(n){var p=Math.min(1,(n-s)/1400),v=t*(1-Math.pow(1-p,3));el.textContent=pre+v.toFixed(dec)+suf;if(p<1)requestAnimationFrame(f)})(s)}
-if('IntersectionObserver' in window){var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');if(x.target.hasAttribute('data-count'))count(x.target);io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)})}else{els.forEach(function(e){e.classList.add('in')})}
+var rvList = els.slice(), rvTick = false;
+function rvCheck(){ rvTick = false; var line = window.innerHeight * 0.92, atEnd = (window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 4;
+  rvList = rvList.filter(function(el){ if(atEnd || el.getBoundingClientRect().top < line){ el.classList.add('in'); if(el.hasAttribute('data-count'))count(el); return false; } return true; });
+  if(!rvList.length){ window.removeEventListener('scroll', rvOnScroll); window.removeEventListener('resize', rvOnScroll); } }
+function rvOnScroll(){ if(!rvTick){ rvTick = true; requestAnimationFrame(rvCheck); } }
+if(rvList.length){ window.addEventListener('scroll', rvOnScroll, {passive:true}); window.addEventListener('resize', rvOnScroll); rvCheck(); }
 $$('[data-em]').forEach(function(a){var m=a.getAttribute('data-em')+'@'+(a.getAttribute('data-dom')||'eyetoad.com');function set(){a.href='mai'+'lto:'+m}a.addEventListener('click',set);a.addEventListener('mouseenter',set);a.addEventListener('focus',set);if(a.hasAttribute('data-show'))a.textContent=m});
 $$('[data-year]').forEach(function(e){e.textContent=new Date().getFullYear()});
 $$('form[data-lead]').forEach(function(f){var t0=Date.now();f.addEventListener('submit',function(e){e.preventDefault();var msg=$('.fmsg',f);
