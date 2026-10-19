@@ -30,8 +30,9 @@ $$('form[data-lead]').forEach(function(f){var t0=Date.now();f.addEventListener('
  var to='in'+'fo'+'@'+'eyetoad'+'.com';msg.textContent='Sending...';
  fetch('https://formsubmit.co/ajax/'+to,{method:'POST',headers:{'Accept':'application/json'},body:fd}).then(function(r){return r.json().catch(function(){return {}}).then(function(j){if(!r.ok||String(j&&j.success)!=='true')throw 0})}).then(function(){f.reset();msg.textContent='Got it. A strategist will reach out shortly. Faster? Call 1-800-481-8638.'}).catch(function(){msg.textContent='Could not send. Please call 1-800-481-8638.'})})});
 function load(src){var s=d.createElement('script');s.src=src;s.defer=true;d.body.appendChild(s)}
-if(b.hasAttribute('data-tools'))load('/assets/tools.js?v=1');
 var idle=window.requestIdleCallback||function(f){setTimeout(f,1200)};
-idle(function(){load('/assets/root.js?v=1')},{timeout:3000});
+var after=function(fn){if(b.hasAttribute('data-intro')&&!window.__compiled){d.addEventListener('ds:compiled',function(){idle(fn,{timeout:1500})},{once:true})}else fn()};
+if(b.hasAttribute('data-tools'))after(function(){load('/assets/tools.js?v=1')});
+after(function(){idle(function(){load('/assets/root.js?v=1')},{timeout:3000})});
 })();
 (function(){var h=document.querySelector('.hdr'),b=document.querySelector('.burger');function s(){if(h)document.documentElement.style.setProperty('--hh',Math.round(h.getBoundingClientRect().bottom)+'px')}s();window.addEventListener('resize',s,{passive:true});window.addEventListener('scroll',s,{passive:true});if(b)b.addEventListener('click',s,true)})();
