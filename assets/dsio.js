@@ -26,9 +26,9 @@ $$('form[data-lead]').forEach(function(f){var t0=Date.now();f.addEventListener('
  var ph=String(fd.get('phone')||'').replace(/\D/g,''),nm=String(fd.get('name')||'').trim();
  if(!nm||ph.length<10){msg.textContent='Add your name and a 10-digit phone number.';return}
  if(!ok){msg.textContent='That message is a little long. Trim it and try again.';return}
- fd.delete('_hp');fd.append('_subject','DenverSEO.io lead: '+(fd.get('topic')||'website'));fd.append('_template','table');fd.append('page',location.pathname);
- var to='in'+'fo'+'@'+'eyetoad'+'.com';msg.textContent='Sending...';
- fetch('https://formsubmit.co/ajax/'+to,{method:'POST',headers:{'Accept':'application/json'},body:fd}).then(function(r){return r.json().catch(function(){return {}}).then(function(j){if(!r.ok||String(j&&j.success)!=='true')throw 0})}).then(function(){f.reset();msg.textContent='Got it. A strategist will reach out shortly. Faster? Call 1-800-481-8638.'}).catch(function(){msg.textContent='Could not send. Please call 1-800-481-8638.'})})});
+ fd.delete('_hp');var data={};fd.forEach(function(v,k){data[k]=String(v).trim().slice(0,3000)});data._subject='DenverSEO.io lead: '+(data.topic||'website');data._template='table';data.site='denverseo.io';data.page=location.pathname;
+ msg.textContent='Sending...';
+ fetch('https://clients.eyetoad.com/lead/send.php',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)}).then(function(r){return r.json().catch(function(){return {}}).then(function(j){if(!r.ok||!(j&&(j.success===true||String(j.success)==='true')))throw 0})}).then(function(){f.reset();msg.textContent='Got it. A strategist will reach out shortly. Faster? Call 1-800-481-8638.'}).catch(function(){msg.textContent='Could not send. Please call 1-800-481-8638.'})})});
 function load(src){var s=d.createElement('script');s.src=src;s.defer=true;d.body.appendChild(s)}
 var idle=window.requestIdleCallback||function(f){setTimeout(f,1200)};
 var after=function(fn){if(b.hasAttribute('data-intro')&&!window.__compiled){d.addEventListener('ds:compiled',function(){idle(fn,{timeout:1500})},{once:true})}else fn()};

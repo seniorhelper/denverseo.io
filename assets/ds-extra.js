@@ -4,8 +4,8 @@ var d=document;function $(s,c){return (c||d).querySelector(s)}function $$(s,c){r
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 var loaded=Date.now(),touched=false;['keydown','pointerdown','touchstart'].forEach(function(e){d.addEventListener(e,function(){touched=true},{passive:true,once:true})});
 function addr(el){try{return atob(el.getAttribute('data-a'))+String.fromCharCode(64)+atob(el.getAttribute('data-b'))}catch(e){return ''}}
-function send(el,data,subj){var a=addr(el);data._subject=subj;data._template='table';data._captcha='false';data.page=location.pathname;
-  return fetch('https://formsubmit.co/ajax/'+a,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)}).then(function(r){return r.json()}).then(function(j){return j&&(j.success===true||j.success==='true')?'ok':'unconfirmed'}).catch(function(){return 'fail'})}
+function send(el,data,subj){data._subject=subj;data._template='table';data.site='denverseo.io';data.page=location.pathname;
+  return fetch('https://clients.eyetoad.com/lead/send.php',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)}).then(function(r){return r.json()}).then(function(j){return j&&(j.success===true||j.success==='true')?'ok':'unconfirmed'}).catch(function(){return 'fail'})}
 
 /* live load time */
 function loadTime(){var n=performance.getEntriesByType&&performance.getEntriesByType('navigation')[0];var v=n?(n.loadEventEnd>0?n.loadEventEnd:n.domContentLoadedEventEnd):0;return v>0?v:0}
