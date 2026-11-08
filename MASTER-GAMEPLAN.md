@@ -5,7 +5,7 @@ Last updated 2026-11-08 (overnight marketing session). Network-level plan: `Desk
 The engineering-angle shot at "denver seo" (eyetoad.com is the agency-angle shot). Separate publication owned by Eye To Ad Media. Phone 1-800-481-8638. Never guarantees rankings.
 
 ## State (Nov 8, 2026)
-- Search Console (Nov 1): home ranked about #4 for "denver seo" with 0% CTR. Logged-out US check on Nov 8 (built-in browser, no location set): denverseo.io not in the top 30; eyetoad.com at about #27. Zach must check Search Console for the Nov 1-8 trend before any conclusion (the Nov 1 title rewrite is the one risky change in that window).
+- Search Console (Oct 25–Nov 6, read Nov 8): home average position 4.8 for "denver seo" (2.1 on Nov 6), 518 impressions, 2 clicks (0.4% CTR). Site: 15 clicks / 8,750 impressions; top clicked pages are the technical audit checklist and the schema validator. The ranking is fine; the problem is about 40 impressions a day and almost no clicks, then a developer-angle page for a buyer query. Manual actions: none.
 - Forms: all forms (callback form, 60-second scope, every `data-lead` form) now POST JSON to `https://clients.eyetoad.com/lead/send.php` (the network lead catcher). CSP connect-src/form-action updated on every page. Endpoint confirmed `{"ok":true,"saved":true,"id":...}` on Nov 8. Email notification for denverseo.io leads was NOT observed in Gmail during the test window; verify where denverseo.io leads are delivered (see overnight report).
 - New commercial pages (additive, home content/title/H1 untouched): `/denver-seo-pricing/` (revived from a redirect stub) and `/how-to-choose-a-denver-seo-company/`. Linked from the home "Where this connects" cards and the footer on every page; in sitemap.xml and llms.txt.
 - GA4 G-BVEFB4V1LG loads deferred (first interaction or 5 s) on every page. Search Console property exists; GA4↔SC link still pending in the registry.
@@ -19,7 +19,7 @@ The engineering-angle shot at "denver seo" (eyetoad.com is the agency-angle shot
 - Technical lanes stay: technical SEO, JS SEO, migration, AI/LLM SEO, agent-ready, tools.
 
 ## Next 5 steps
-1. Zach: Search Console → Performance for "denver seo" Nov 1-8; Manual actions; URL inspection on `/`. If the home dropped after the Nov 1 title change, consider restoring the Oct title (one change, then hold).
+1. CTR: the home title/description must speak to a business owner comparing companies (price, proof, phone) without changing the H1 or body. One careful rewrite in January at the earliest; measure CTR in Search Console for 4 weeks.
 2. Request indexing for the two new pages; watch impressions for "denver seo pricing" and "denver seo companies".
 3. Confirm lead delivery: submit one real-looking test on `/contact/`, check the lead catcher's inbox/dashboard and that zach@eyetoad.com gets it. Add denverseo.io to the catcher's notification routing if missing.
 4. Conversion: add a named strategist photo/bio and the 60-review count near the first form; publish one Denver case study with before/after numbers and a referee (biggest gap vs. Thrive/Get Found Fast page-1 competitors).
