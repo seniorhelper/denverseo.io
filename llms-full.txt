@@ -1043,3 +1043,49 @@ Once, after you have meaningfully improved the page, is reasonable. Repeated req
 URL: https://denverseo.io/blog/
 
 The DenverSEO.io blog publishes practical engineering notes on technical SEO, AI crawlers, structured data, agent-ready websites and website maintenance.
+
+## Noindex vs robots.txt: block the crawl or block the index
+URL: https://denverseo.io/blog/noindex-vs-robots-txt/
+
+Robots.txt controls crawling. Noindex controls indexing. A Disallow rule tells crawlers not to fetch a URL, but Google can still list that URL if other pages link to it. A noindex meta tag or X-Robots-Tag header tells Google to drop the page from results, but only works if Google is allowed to crawl the page and read it. To keep a page out of Google, use noindex and leave it crawlable. Use robots.txt to save crawling on URLs that do not matter.
+
+### What is the difference between noindex and robots.txt?
+Robots.txt controls crawling: it tells crawlers which URL paths they may request. Noindex controls indexing: it tells a search engine that has fetched a page not to show it in results. A URL blocked in robots.txt can still be indexed from links, and a noindex directive only works if the page can be crawled.
+
+### Can I use robots.txt Disallow and noindex on the same page?
+You can, but it backfires. The Disallow rule stops Google from fetching the page, so it never reads the noindex. To remove a page from Google, allow crawling and use noindex alone.
+
+### Why does Search Console say indexed, though blocked by robots.txt?
+Google found links to the URL and indexed it without being allowed to crawl it. Robots.txt stopped the crawl but not the indexing. Remove the Disallow rule, add noindex or real access control, and let Google recrawl the page.
+
+### How do I noindex a PDF?
+Send an X-Robots-Tag: noindex HTTP response header for the file. In Apache use a FilesMatch block with Header set, in Nginx use add_header inside a location block, and on Netlify use a _headers file. Meta tags cannot be placed inside a PDF.
+
+### What is the best way to keep a staging site out of Google?
+Password-protect it with HTTP authentication so crawlers get a 401 response, and add an X-Robots-Tag noindex header as a backup. A robots.txt Disallow alone stops crawling but can still let staging URLs be indexed from links.
+
+### How long does it take Google to drop a noindexed page?
+Google drops it the next time it crawls the URL and reads the directive. That can be days for frequently crawled pages and weeks or longer for deep ones. Requesting indexing in the URL Inspection tool prompts a recrawl.
+
+## How to set up 301 redirects, then prove they work
+URL: https://denverseo.io/blog/how-to-set-up-301-redirects/
+
+To set up a 301 redirect, add a rule at the server or hosting layer that answers requests for the old URL with status 301 and a Location header pointing to the new URL. On Apache that is a Redirect 301 line in .htaccess; on Nginx, a return 301; on Netlify, a line in _redirects. Point every old URL straight at its final destination in one hop, then test each one with curl -I before you call it done.
+
+### How do I set up a 301 redirect?
+Add a rule at your server or host that answers the old URL with status 301 and a Location header for the new URL: a Redirect 301 line in Apache's .htaccess, a return 301 in Nginx, a line in Netlify's _redirects file, or a redirect in vercel.json. Then test it with curl -I.
+
+### What is the difference between a 301 and a 302 redirect?
+A 301 is permanent and tells Google to show the new URL in search results. A 302 is temporary and tells Google to keep showing the old URL. Use 301 for any move you do not plan to undo.
+
+### Is a 308 redirect the same as a 301 for SEO?
+Google treats both as permanent redirects. The difference is technical: a 308 requires the browser to keep the request method, so a form POST stays a POST. Vercel sends 308 when a redirect is marked permanent.
+
+### How do I find redirect chains on my site?
+Run curl -sIL on an old URL to see every hop, or use a short script that follows each URL in a list and flags any that take more than one redirect. Then point every old URL straight at its final destination.
+
+### Can I do a 301 redirect on GitHub Pages?
+GitHub Pages has no server redirect rules. Jekyll sites can use the jekyll-redirect-from plugin, and any static site can place an HTML file at the old path with an instant meta refresh and a canonical tag. Google treats a zero-second meta refresh as a permanent redirect.
+
+### How long should I keep 301 redirects in place?
+Google's site move guidance says to keep redirects as long as possible, generally at least a year. We keep them indefinitely, because old links on other sites keep sending visitors for years and a redirect costs almost nothing to serve.
